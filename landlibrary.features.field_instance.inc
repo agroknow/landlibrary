@@ -565,128 +565,6 @@ function landlibrary_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-landlibrary_resource-field_alt_title_lang'
-  $field_instances['node-landlibrary_resource-field_alt_title_lang'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 52,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_alt_title_lang',
-    'label' => 'Alternative Title Language',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 34,
-    ),
-  );
-
-  // Exported field_instance: 'node-landlibrary_resource-field_conditional_field'
-  $field_instances['node-landlibrary_resource-field_conditional_field'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Is the resource provided by the user?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 79,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_conditional_field',
-    'label' => 'Resource Provided',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'fc' => array(
-        'fc_allow_empty' => FALSE,
-        'fc_check_zero' => 0,
-        'fc_include' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 13,
-    ),
-  );
-
-  // Exported field_instance: 'node-landlibrary_resource-field_copyrights_statement_lang'
-  $field_instances['node-landlibrary_resource-field_copyrights_statement_lang'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 54,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_copyrights_statement_lang',
-    'label' => 'Copyrights statement language',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 73,
-    ),
-  );
-
   // Exported field_instance: 'node-landlibrary_resource-field_doc_alt_title'
   $field_instances['node-landlibrary_resource-field_doc_alt_title'] = array(
     'bundle' => 'landlibrary_resource',
@@ -944,43 +822,6 @@ cases this indicates a part of a journal volume.
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance: 'node-landlibrary_resource-field_doc_citation_title_lang'
-  $field_instances['node-landlibrary_resource-field_doc_citation_title_lang'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 57,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_doc_citation_title_lang',
-    'label' => 'Citation Title Language',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
       'weight' => 14,
     ),
   );
@@ -1289,11 +1130,8 @@ constitute its legislative or governing body.',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 74,
       ),
       'teaser' => array(
@@ -1328,43 +1166,6 @@ constitute its legislative or governing body.',
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 60,
-    ),
-  );
-
-  // Exported field_instance: 'node-landlibrary_resource-field_doc_desc_lang'
-  $field_instances['node-landlibrary_resource-field_doc_desc_lang'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 53,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_doc_desc_lang',
-    'label' => 'Description language',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 5,
     ),
   );
 
@@ -1420,7 +1221,7 @@ constitute its legislative or governing body.',
     'description' => 'Enter the information identifying the edition or version to which the resource belongs. Use only when the resource is a second or subsequent edition.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -1490,54 +1291,6 @@ constitute its legislative or governing body.',
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-landlibrary_resource-field_doc_file'
-  $field_instances['node-landlibrary_resource-field_doc_file'] = array(
-    'bundle' => 'landlibrary_resource',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 78,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_doc_file',
-    'label' => 'File',
-    'required' => FALSE,
-    'settings' => array(
-      'description_field' => 0,
-      'entity_translation_sync' => FALSE,
-      'file_directory' => '',
-      'file_extensions' => 'txt',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'file',
-      'settings' => array(
-        'allowed_schemes' => array(
-          0 => 'public',
-          1 => 'private',
-        ),
-        'allowed_types' => array(
-          0 => 'image',
-        ),
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'file_generic',
-      'weight' => 14,
-    ),
-  );
-
   // Exported field_instance: 'node-landlibrary_resource-field_doc_geographic_region'
   $field_instances['node-landlibrary_resource-field_doc_geographic_region'] = array(
     'bundle' => 'landlibrary_resource',
@@ -1546,7 +1299,7 @@ constitute its legislative or governing body.',
     'description' => 'Region to which this resource applies.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
@@ -2310,43 +2063,6 @@ constitute its legislative or governing body.',
     ),
   );
 
-  // Exported field_instance: 'node-landlibrary_resource-field_doc_keyword_language'
-  $field_instances['node-landlibrary_resource-field_doc_keyword_language'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 55,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_doc_keyword_language',
-    'label' => 'Keyword Language',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 58,
-    ),
-  );
-
   // Exported field_instance: 'node-landlibrary_resource-field_doc_language'
   $field_instances['node-landlibrary_resource-field_doc_language'] = array(
     'bundle' => 'landlibrary_resource',
@@ -2430,7 +2146,7 @@ constitute its legislative or governing body.',
     'description' => 'The size of the resource as free text (eg. number of pages).',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
@@ -2509,11 +2225,8 @@ constitute its legislative or governing body.',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 73,
       ),
       'teaser' => array(
@@ -2604,7 +2317,7 @@ constitute its legislative or governing body.',
     'description' => 'The place where the resource was published',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
@@ -3063,7 +2776,7 @@ constitute its legislative or governing body.',
     'description' => 'Select the most appropriate type for the resource.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
@@ -3138,7 +2851,7 @@ constitute its legislative or governing body.',
     'description' => 'The physical or digital manifestation of the resource.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
@@ -3165,89 +2878,6 @@ constitute its legislative or governing body.',
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-landlibrary_resource-field_target'
-  $field_instances['node-landlibrary_resource-field_target'] = array(
-    'bundle' => 'landlibrary_resource',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'computed_field',
-        'settings' => array(),
-        'type' => 'computed_field_plain',
-        'weight' => 80,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_target',
-    'label' => 'target',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'fc' => array(
-        'fc_allow_empty' => FALSE,
-        'fc_check_zero' => 0,
-        'fc_include' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'computed_field',
-      'settings' => array(),
-      'type' => 'computed',
-      'weight' => 105,
-    ),
-  );
-
-  // Exported field_instance: 'node-landlibrary_resource-field_title_title_lang'
-  $field_instances['node-landlibrary_resource-field_title_title_lang'] = array(
-    'bundle' => 'landlibrary_resource',
-    'default_value' => array(
-      0 => array(
-        'tid' => 1826,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 56,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_title_title_lang',
-    'label' => 'Title Language',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 32,
     ),
   );
 
@@ -3752,7 +3382,6 @@ constitute its legislative or governing body.',
   t('A textual description of the content of the resource.');
   t('Affiliation');
   t('Alternative Title');
-  t('Alternative Title Language');
   t('An alternative title for the resource.');
   t('An entity responsible for making the content of the resource.');
   t('An entity responsible for making the resource available');
@@ -3767,23 +3396,19 @@ constitute its legislative or governing body.');
   t('Citation Identifier');
   t('Citation Number');
   t('Citation Title');
-  t('Citation Title Language');
   t('Conference');
   t('Contributor');
   t('Copyrights Statement');
-  t('Copyrights statement language');
   t('Country');
   t('Country to which this resource applies.');
   t('Creator');
   t('Data Provider');
   t('Date');
   t('Description');
-  t('Description language');
   t('Edition');
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter the information identifying the edition or version to which the resource belongs. Use only when the resource is a second or subsequent edition.');
   t('Extent');
-  t('File');
   t('Format');
   t('Full Name');
   t('Geographic Region');
@@ -3801,9 +3426,7 @@ constitute its legislative or governing body.');
   t('Is referenced by');
   t('Is shown at');
   t('Is shown by');
-  t('Is the resource provided by the user?');
   t('Keyword');
-  t('Keyword Language');
   t('Language');
   t('Licencing');
   t('Machine name (ISO 639-1)');
@@ -3820,7 +3443,6 @@ constitute its legislative or governing body.');
   t('Relation');
   t('Replaces');
   t('Requires');
-  t('Resource Provided');
   t('Resource type');
   t('Select the most appropriate type for the resource.');
   t('Subject');
@@ -3845,13 +3467,11 @@ associated with its ISSN.');
   t('The size of the resource as free text (eg. number of pages).');
   t('Thumb');
   t('Title');
-  t('Title Language');
   t('Title of the resource i.e. the name by which the resource is formally known.');
   t('Unique label that identifies the resource.');
   t('Upload an image to go with this article.');
   t('User');
   t('Website');
-  t('target');
 
   return $field_instances;
 }

@@ -77,7 +77,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_landlibrary_resource';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-auto-nodetitle';
   $export['additional_settings__active_tab_landlibrary_resource'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -473,7 +473,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1426087325;
+  $strongarm->value = 1426157470;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -487,14 +487,14 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nl1yj9';
+  $strongarm->value = 'nl3gqq';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1426065091;
+  $strongarm->value = 1426153520;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -851,7 +851,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'elysia_cron_last_run';
-  $strongarm->value = 1426087269;
+  $strongarm->value = 1426157451;
   $export['elysia_cron_last_run'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2200,33 +2200,62 @@ function landlibrary_strongarm() {
     13 => 'misc/ajax.js',
     14 => 'sites/all/modules/views/js/ajax_view.js',
     15 => 'modules/contextual/contextual.js',
-    16 => 'sites/all/modules/facetapi/facetapi.js',
-    17 => 'sites/all/modules/views/js/views-contextual.js',
-    18 => 'modules/toolbar/toolbar.js',
+    16 => 'sites/all/modules/views/js/views-contextual.js',
+    17 => 'modules/toolbar/toolbar.js',
     'refresh:fr' => 'waiting',
     'refresh:de' => 'waiting',
     'refresh:es' => 'waiting',
-    19 => 'modules/overlay/overlay-child.js',
-    20 => 'sites/all/modules/ctools/js/auto-submit.js',
-    21 => 'misc/tableheader.js',
-    22 => 'sites/all/modules/context/context_ui/context_ui.js',
-    23 => 'sites/all/modules/context/context_ui/jquery.pageEditor.js',
-    24 => 'misc/form.js',
-    25 => 'misc/textarea.js',
-    26 => 'sites/all/modules/context/plugins/context_reaction_block.js',
-    27 => 'misc/tabledrag.js',
-    28 => 'misc/collapse.js',
-    29 => 'sites/all/modules/features/features.js',
-    30 => 'misc/vertical-tabs.js',
-    31 => 'misc/machine-name.js',
+    18 => 'modules/overlay/overlay-child.js',
+    19 => 'misc/textarea.js',
+    20 => 'sites/all/modules/ctools/js/dependent.js',
+    21 => 'sites/all/modules/ctools/js/dropbutton.js',
+    22 => 'misc/tableheader.js',
+    23 => 'misc/form.js',
+    24 => 'misc/collapse.js',
+    25 => 'misc/batch.js',
+    26 => 'sites/all/modules/ctools/js/auto-submit.js',
+    27 => 'sites/all/modules/context/context_ui/context_ui.js',
+    28 => 'sites/all/modules/context/context_ui/jquery.pageEditor.js',
+    29 => 'sites/all/modules/context/plugins/context_reaction_block.js',
+    30 => 'misc/tabledrag.js',
+    31 => 'sites/all/modules/facetapi/facetapi.js',
     32 => 'misc/autocomplete.js',
-    33 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js',
-    34 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js',
-    35 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js',
-    36 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js',
-    37 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js',
-    38 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js',
-    39 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js',
+    33 => 'sites/all/modules/views_bulk_operations/js/views_bulk_operations.js',
+    34 => 'modules/file/file.js',
+    35 => 'misc/states.js',
+    36 => 'sites/all/modules/date/date.js',
+    37 => 'sites/all/modules/entityconnect/theme/js/entityconnect.js',
+    38 => 'modules/menu/menu.js',
+    39 => 'sites/all/modules/pathauto/pathauto.js',
+    40 => 'modules/node/node.js',
+    41 => 'modules/comment/comment-node-form.js',
+    42 => 'misc/vertical-tabs.js',
+    43 => 'sites/all/modules/conditional_fields/js/conditional_fields.js',
+    44 => 'sites/all/modules/field_group/field_group.js',
+    45 => 'misc/machine-name.js',
+    46 => 'modules/field_ui/field_ui.js',
+    47 => 'sites/all/modules/field_group/field_group.field_ui.js',
+    48 => 'sites/all/modules/location/location_autocomplete.js',
+    49 => 'sites/all/modules/token/jquery.treeTable.js',
+    50 => 'sites/all/modules/token/token.js',
+    51 => 'sites/all/modules/auto_nodetitle/auto_nodetitle.js',
+    52 => 'modules/menu/menu.admin.js',
+    53 => 'modules/node/content_types.js',
+    54 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js',
+    55 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js',
+    56 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js',
+    57 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js',
+    58 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js',
+    59 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js',
+    60 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js',
+    61 => 'sites/all/modules/ctools/js/modal.js',
+    62 => 'sites/all/modules/ds/js/ds.admin.js',
+    63 => 'sites/all/modules/ds/modules/ds_extras/js/ds_extras.admin.js',
+    64 => 'sites/all/modules/features/features.js',
+    65 => 'sites/all/modules/views/js/ajax.js',
+    66 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.tabs.min.js',
+    67 => 'sites/all/modules/ctools/js/collapsible-div.js',
+    68 => 'sites/all/modules/views/js/views-admin.js',
   );
   $export['javascript_parsed'] = $strongarm;
 
@@ -4054,8 +4083,7 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
   $strongarm->value = array(
-    'facetapi_bonus' => 1425545978,
-    'feeds_crawler' => 1425548482,
+    'facetapi_bonus' => 1426153143,
   );
   $export['module_filter_recent_modules'] = $strongarm;
 
@@ -4819,7 +4847,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1426065074;
+  $strongarm->value = 1426153510;
   $export['search_api_solr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5136,7 +5164,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1426087324;
+  $strongarm->value = 1426157469;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

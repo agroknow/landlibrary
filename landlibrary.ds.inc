@@ -5,6 +5,33 @@
  */
 
 /**
+ * Implements hook_ds_custom_fields_info().
+ */
+function landlibrary_ds_custom_fields_info() {
+  $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'view_resources';
+  $ds_field->label = 'View resources';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = 'organization|library_source';
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<?php echo \'<a href="#">Here.</a>\'; ?>',
+      'format' => 'full_html',
+    ),
+    'use_token' => 1,
+  );
+  $export['view_resources'] = $ds_field;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function landlibrary_ds_layout_settings_info() {
@@ -32,36 +59,35 @@ function landlibrary_ds_layout_settings_info() {
         9 => 'field_doc_citation_number',
         10 => 'field_doc_citation_chronology',
         11 => 'field_doc_alt_title',
-        12 => 'field_doc_copyrights_statement',
-        23 => 'field_doc_relation',
-        24 => 'field_doc_is_part_of',
-        25 => 'field_doc_has_part',
-        26 => 'field_doc_has_version',
-        27 => 'field_doc_is_version_of',
-        28 => 'field_doc_has_translation',
-        29 => 'field_doc_is_translation_of',
-        30 => 'field_doc_references',
-        31 => 'field_doc_is_referenced_by',
-        32 => 'field_doc_replaces',
-        33 => 'field_doc_is_replaced_by',
-        34 => 'field_doc_is_required_by',
-        35 => 'field_doc_requires',
-        36 => 'field_doc_contributor',
-        37 => 'field_doc_conference',
-        38 => 'field_doc_subject',
+        12 => 'field_doc_subject',
+        13 => 'field_doc_copyrights_statement',
+        24 => 'field_doc_relation',
+        25 => 'field_doc_is_part_of',
+        26 => 'field_doc_has_part',
+        27 => 'field_doc_has_version',
+        28 => 'field_doc_is_version_of',
+        29 => 'field_doc_has_translation',
+        30 => 'field_doc_is_translation_of',
+        31 => 'field_doc_references',
+        32 => 'field_doc_is_referenced_by',
+        33 => 'field_doc_replaces',
+        34 => 'field_doc_is_replaced_by',
+        35 => 'field_doc_is_required_by',
+        36 => 'field_doc_requires',
+        37 => 'field_doc_contributor',
+        38 => 'field_doc_conference',
       ),
       'right' => array(
-        13 => 'field_doc_publisher',
-        14 => 'field_doc_publisher_place',
-        15 => 'field_doc_creator',
-        16 => 'field_doc_type',
-        17 => 'field_doc_pagination',
-        18 => 'field_format',
-        19 => 'field_doc_geographic_region',
-        20 => 'field_doc_edition',
-        21 => 'field_doc_identifier',
-        22 => 'field_doc_terms_of_use',
-        39 => 'field_target',
+        14 => 'field_doc_publisher',
+        15 => 'field_doc_publisher_place',
+        16 => 'field_doc_creator',
+        17 => 'field_doc_type',
+        18 => 'field_doc_pagination',
+        19 => 'field_format',
+        20 => 'field_doc_geographic_region',
+        21 => 'field_doc_edition',
+        22 => 'field_doc_identifier',
+        23 => 'field_doc_terms_of_use',
       ),
     ),
     'fields' => array(
@@ -77,6 +103,7 @@ function landlibrary_ds_layout_settings_info() {
       'field_doc_citation_number' => 'left',
       'field_doc_citation_chronology' => 'left',
       'field_doc_alt_title' => 'left',
+      'field_doc_subject' => 'left',
       'field_doc_copyrights_statement' => 'left',
       'field_doc_publisher' => 'right',
       'field_doc_publisher_place' => 'right',
@@ -103,8 +130,6 @@ function landlibrary_ds_layout_settings_info() {
       'field_doc_requires' => 'left',
       'field_doc_contributor' => 'left',
       'field_doc_conference' => 'left',
-      'field_doc_subject' => 'left',
-      'field_target' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
