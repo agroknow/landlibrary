@@ -125,16 +125,21 @@ a {
 	text-align:center;
 }
 
-#block-menu-menu-landlibrary-menu ul.menu li:nth-child(3n+1) {
+/* line 99, ../scss/modules/_menus.scss */
+.page-node-6 #section-header ul.primary li:nth-child(3n+1),
+#section-header ul.menu li:nth-child(3n+1) {
   background-color: rgba(219, 51, 1, 0.3);
 }
 
-#block-menu-menu-landlibrary-menu ul.menu li:nth-child(3n+2) {
+/* line 99, ../scss/modules/_menus.scss */
+.page-node-6 #section-header ul.primary li:nth-child(3n+2),
+#section-header ul.menu li:nth-child(3n+2) {
   background-color: rgba(157, 85, 63, 0.3);
 }
 
-#block-menu-menu-landlibrary-menu ul.menu li:nth-child(3n+3) {
-
+/* line 99, ../scss/modules/_menus.scss */
+.page-node-6 #section-header ul.primary li:nth-child(3n+3),
+#section-header ul.menu li:nth-child(3n+3) {
   background-color: rgba(218, 66, 20, 0.3);
 }
 
