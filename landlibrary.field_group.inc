@@ -13,39 +13,6 @@ function landlibrary_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_doc_alt_title|node|landlibrary_resource|form';
-  $field_group->group_name = 'group_doc_alt_title';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'landlibrary_resource';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_doc_title_info';
-  $field_group->data = array(
-    'label' => 'Alternative Title',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_alt_title_lang',
-      1 => 'field_doc_alt_title',
-    ),
-    'format_type' => 'field_group_multiple_container',
-    'format_settings' => array(
-      'formatter' => 'open',
-      'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
-        'classes' => 'group-doc-alt-title field-group-field_group_multiple_container',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_doc_alt_title|node|landlibrary_resource|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_doc_citation|node|landlibrary_resource|form';
   $field_group->group_name = 'group_doc_citation';
   $field_group->entity_type = 'node';
@@ -73,72 +40,6 @@ function landlibrary_field_group_info() {
     ),
   );
   $export['group_doc_citation|node|landlibrary_resource|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_doc_citatio|node|landlibrary_resource|form';
-  $field_group->group_name = 'group_doc_citatio';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'landlibrary_resource';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_doc_citation';
-  $field_group->data = array(
-    'label' => 'Citation Title',
-    'weight' => '12',
-    'children' => array(
-      0 => 'field_doc_citation',
-      1 => 'field_doc_citation_title_lang',
-    ),
-    'format_type' => 'field_group_multiple_container',
-    'format_settings' => array(
-      'formatter' => 'open',
-      'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
-        'classes' => 'group-doc-citatio field-group-field_group_multiple_container',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_doc_citatio|node|landlibrary_resource|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_doc_copyrights|node|landlibrary_resource|form';
-  $field_group->group_name = 'group_doc_copyrights';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'landlibrary_resource';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_doc_rights';
-  $field_group->data = array(
-    'label' => 'Copyrights Statement',
-    'weight' => '5',
-    'children' => array(
-      0 => 'field_copyrights_statement_lang',
-      1 => 'field_doc_copyrights_statement',
-    ),
-    'format_type' => 'field_group_multiple_container',
-    'format_settings' => array(
-      'formatter' => 'open',
-      'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
-        'classes' => 'group-doc-copyrights field-group-field_group_multiple_container',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_doc_copyrights|node|landlibrary_resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -226,39 +127,6 @@ function landlibrary_field_group_info() {
     ),
   );
   $export['group_doc_desc_info|node|landlibrary_resource|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_doc_description|node|landlibrary_resource|form';
-  $field_group->group_name = 'group_doc_description';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'landlibrary_resource';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_doc_desc_info';
-  $field_group->data = array(
-    'label' => 'Description',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_doc_description',
-      1 => 'field_doc_desc_lang',
-    ),
-    'format_type' => 'field_group_multiple_container',
-    'format_settings' => array(
-      'formatter' => 'open',
-      'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
-        'classes' => 'group-doc-description field-group-field_group_multiple_container',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_doc_description|node|landlibrary_resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -546,39 +414,6 @@ function landlibrary_field_group_info() {
     ),
   );
   $export['group_doc_title_info|node|landlibrary_resource|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_doc_title|node|landlibrary_resource|form';
-  $field_group->group_name = 'group_doc_title';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'landlibrary_resource';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_doc_title_info';
-  $field_group->data = array(
-    'label' => 'Title',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_doc_title',
-      1 => 'field_title_title_lang',
-    ),
-    'format_type' => 'field_group_multiple_container',
-    'format_settings' => array(
-      'formatter' => 'open',
-      'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
-        'classes' => 'group-doc-title field-group-field_group_multiple_container',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_doc_title|node|landlibrary_resource|form'] = $field_group;
 
   return $export;
 }
