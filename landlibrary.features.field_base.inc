@@ -10,6 +10,82 @@
 function landlibrary_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'description_field'
+  $field_bases['description_field'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'description_field',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 1,
+    'type' => 'text_with_summary',
+  );
+
+  // Exported field_base: 'field_agrovoc_uri'
+  $field_bases['field_agrovoc_uri'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_agrovoc_uri',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_browse_type_image'
+  $field_bases['field_browse_type_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_browse_type_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
   // Exported field_base: 'field_doc_alt_title'
   $field_bases['field_doc_alt_title'] = array(
     'active' => 1,
@@ -19,14 +95,6 @@ function landlibrary_field_default_field_bases() {
     'field_name' => 'field_doc_alt_title',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(
@@ -53,14 +121,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -83,7 +143,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_citation_chronology',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -118,7 +177,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -152,14 +210,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -182,14 +232,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_conference',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -226,14 +268,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_contributor',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -270,14 +304,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_copyrights_statement',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -295,20 +321,12 @@ function landlibrary_field_default_field_bases() {
   // Exported field_base: 'field_doc_country'
   $field_bases['field_doc_country'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_country',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(
@@ -341,7 +359,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -373,14 +390,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_creator',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -418,14 +427,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_data_provider',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -465,14 +466,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -496,14 +489,6 @@ function landlibrary_field_default_field_bases() {
     'field_name' => 'field_doc_edition',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(
@@ -534,14 +519,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -570,7 +547,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_has_part',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -601,7 +577,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_has_translation',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -632,7 +607,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_has_version',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -666,14 +640,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -696,7 +662,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_is_part_of',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -727,7 +692,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_is_referenced_by',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -758,7 +722,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_is_replaced_by',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -789,7 +752,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_is_required_by',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -823,7 +785,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -857,7 +818,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -881,6 +841,32 @@ function landlibrary_field_default_field_bases() {
     'type' => 'link_field',
   );
 
+  // Exported field_base: 'field_doc_is_shown_by_file'
+  $field_bases['field_doc_is_shown_by_file'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_doc_is_shown_by_file',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 1,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
+  );
+
   // Exported field_base: 'field_doc_is_translation_of'
   $field_bases['field_doc_is_translation_of'] = array(
     'active' => 1,
@@ -888,7 +874,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_is_translation_of',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -919,7 +904,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_is_version_of',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -950,14 +934,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_keyword',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -988,14 +964,6 @@ function landlibrary_field_default_field_bases() {
     'field_name' => 'field_doc_language',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(
@@ -1028,14 +996,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -1067,14 +1027,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1101,14 +1053,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_provider',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -1145,14 +1089,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_publisher',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -1192,14 +1128,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -1228,7 +1156,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_references',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -1259,7 +1186,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_relation',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -1290,7 +1216,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_replaces',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -1321,7 +1246,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_requires',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -1352,14 +1276,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_subject',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -1370,7 +1286,7 @@ function landlibrary_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'topics',
+          'vocabulary' => 'landportal_topics',
           'parent' => 0,
         ),
       ),
@@ -1390,14 +1306,6 @@ function landlibrary_field_default_field_bases() {
     'field_name' => 'field_doc_terms_of_use',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(
@@ -1427,14 +1335,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_doc_thumb',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -1463,14 +1363,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1495,14 +1387,6 @@ function landlibrary_field_default_field_bases() {
     'field_name' => 'field_doc_type',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(
@@ -1536,14 +1420,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -1565,6 +1441,126 @@ function landlibrary_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_interests'
+  $field_bases['field_interests'] = array(
+    'active' => 1,
+    'cardinality' => 5,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_interests',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'interests',
+          'parent' => 0,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_iso3'
+  $field_bases['field_iso3'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_iso3',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 10,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_linked_uris'
+  $field_bases['field_linked_uris'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_linked_uris',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_local_file_url'
+  $field_bases['field_local_file_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_local_file_url',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'computed_field',
+    'settings' => array(
+      'code' => '$external_url = "";
+if ( ($field_items = field_get_items($entity_type, $entity, \'field_doc_is_shown_by_file\')) ) {
+  $file = file_load($field_items[0][\'fid\']);
+  $uri = $file->uri;
+  $external_url = file_create_url($uri);
+}
+$entity_field[0][\'value\'] = $external_url;
+',
+      'database' => array(
+        'data_default' => '',
+        'data_index' => 0,
+        'data_length' => 32,
+        'data_not_NULL' => 0,
+        'data_precision' => 10,
+        'data_scale' => 2,
+        'data_size' => 'normal',
+        'data_type' => 'text',
+      ),
+      'display_format' => '$display_output = $entity_field_item[\'value\'];',
+      'entity_translation_sync' => FALSE,
+      'store' => 1,
+    ),
+    'translatable' => 0,
+    'type' => 'computed',
+  );
+
   // Exported field_base: 'field_machine_name'
   $field_bases['field_machine_name'] = array(
     'active' => 1,
@@ -1572,14 +1568,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_machine_name',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1602,14 +1590,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_machine_name_2',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1625,6 +1605,36 @@ function landlibrary_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_old_geopolitical_ontology_'
+  $field_bases['field_old_geopolitical_ontology_'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_old_geopolitical_ontology_',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
   // Exported field_base: 'field_person_affiliation'
   $field_bases['field_person_affiliation'] = array(
     'active' => 1,
@@ -1632,14 +1642,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_person_affiliation',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -1679,14 +1681,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1712,14 +1706,6 @@ function landlibrary_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1735,21 +1721,13 @@ function landlibrary_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sub_referenced_subject'
-  $field_bases['field_sub_referenced_subject'] = array(
+  // Exported field_base: 'field_referenced_type'
+  $field_bases['field_referenced_type'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_sub_referenced_subject',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
+    'field_name' => 'field_referenced_type',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -1770,8 +1748,43 @@ function landlibrary_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'subjects' => 'subjects',
-          'topics' => 'topics',
+          'landlibrary_resource_type' => 'landlibrary_resource_type',
+        ),
+      ),
+      'target_type' => 'taxonomy_term',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_sub_referenced_subject'
+  $field_bases['field_sub_referenced_subject'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sub_referenced_subject',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'landportal_topics' => 'landportal_topics',
         ),
       ),
       'target_type' => 'taxonomy_term',
@@ -1787,14 +1800,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_tags',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -1823,14 +1828,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_user',
-    'foreign keys' => array(
-      'users' => array(
-        'columns' => array(
-          'target_id' => 'uid',
-        ),
-        'table' => 'users',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -1865,7 +1862,6 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_website',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -1896,20 +1892,34 @@ function landlibrary_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'name_field',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
       ),
     ),
     'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+    ),
+    'translatable' => 1,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'synonyms_synonyms'
+  $field_bases['synonyms_synonyms'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'synonyms_synonyms',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 1,
     'module' => 'text',
     'settings' => array(
       'entity_translation_sync' => FALSE,

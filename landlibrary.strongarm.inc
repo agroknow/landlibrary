@@ -84,7 +84,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_organization';
-  $strongarm->value = 'edit-display';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_organization'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -182,7 +182,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_landlibrary_resource';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['ant_landlibrary_resource'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -445,8 +445,197 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'apachesolr_site_hash';
-  $strongarm->value = '2e7lb4';
+  $strongarm->value = 'fdaebq';
   $export['apachesolr_site_hash'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_fao_docs_feed';
+  $strongarm->value = 0;
+  $export['comment_anonymous_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_fao_preimport_authors';
+  $strongarm->value = 0;
+  $export['comment_anonymous_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_fao_publications_feed';
+  $strongarm->value = 0;
+  $export['comment_anonymous_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_page';
+  $strongarm->value = 0;
+  $export['comment_anonymous_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_fao_docs_feed';
+  $strongarm->value = 1;
+  $export['comment_default_mode_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_fao_preimport_authors';
+  $strongarm->value = 1;
+  $export['comment_default_mode_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_fao_publications_feed';
+  $strongarm->value = 1;
+  $export['comment_default_mode_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_page';
+  $strongarm->value = 0;
+  $export['comment_default_mode_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_fao_docs_feed';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_fao_preimport_authors';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_fao_publications_feed';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_page';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_fao_docs_feed';
+  $strongarm->value = '2';
+  $export['comment_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_fao_preimport_authors';
+  $strongarm->value = '2';
+  $export['comment_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_fao_publications_feed';
+  $strongarm->value = '2';
+  $export['comment_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_fao_docs_feed';
+  $strongarm->value = 1;
+  $export['comment_form_location_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_fao_preimport_authors';
+  $strongarm->value = 1;
+  $export['comment_form_location_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_fao_publications_feed';
+  $strongarm->value = 1;
+  $export['comment_form_location_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_page';
+  $strongarm->value = 1;
+  $export['comment_form_location_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_page';
+  $strongarm->value = '1';
+  $export['comment_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_fao_docs_feed';
+  $strongarm->value = '1';
+  $export['comment_preview_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_fao_preimport_authors';
+  $strongarm->value = '1';
+  $export['comment_preview_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_fao_publications_feed';
+  $strongarm->value = '1';
+  $export['comment_preview_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_page';
+  $strongarm->value = '1';
+  $export['comment_preview_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_fao_docs_feed';
+  $strongarm->value = 1;
+  $export['comment_subject_field_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_fao_preimport_authors';
+  $strongarm->value = 1;
+  $export['comment_subject_field_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_fao_publications_feed';
+  $strongarm->value = 1;
+  $export['comment_subject_field_fao_publications_feed'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -454,6 +643,13 @@ function landlibrary_strongarm() {
   $strongarm->name = 'comment_subject_field_landlibrary_resource';
   $strongarm->value = 1;
   $export['comment_subject_field_landlibrary_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_page';
+  $strongarm->value = 0;
+  $export['comment_subject_field_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -466,14 +662,14 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_key';
-  $strongarm->value = 'bskamX3ytAQXWw1IJm-jc14pgmUe41Hs_WO8Eb8Q_zc';
+  $strongarm->value = '-eBZw9qC7ECXzjmM-QPU8EFEKOtB1PEOaN7m9vsGOfM';
   $export['cron_key'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1426157470;
+  $strongarm->value = 1431097549;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -487,14 +683,14 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nl3gqq';
+  $strongarm->value = 'no19ou';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1426153520;
+  $strongarm->value = 1431068956;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -508,7 +704,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_default_timezone';
-  $strongarm->value = 'Europe/Helsinki';
+  $strongarm->value = 'Europe/Rome';
   $export['date_default_timezone'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -565,21 +761,22 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'default_feeds_importer';
   $strongarm->value = array(
+    'agris_conference_preimporter' => FALSE,
+    'agris_dump_file_upload_importer' => TRUE,
     'agris_filter' => FALSE,
     'agris_organization_preimporter' => FALSE,
     'clone2_agris_file' => FALSE,
-    'clone_agris_file' => TRUE,
+    'countries_taxonomy_iso_and_external_uris_importer' => FALSE,
     'ifpri_batch_file_importer' => FALSE,
-    'ifpri_creator_preimporter' => TRUE,
-    'ifpri_creator_preimporter2' => FALSE,
-    'ifpri_creator_preimporter_filter' => TRUE,
-    'ifpri_publisher_preimporter' => FALSE,
-    'legacy_importer' => FALSE,
-    'legacy_ll_crawler' => FALSE,
+    'ifpri_creator_preimporter' => FALSE,
+    'oai_pmh_importer' => FALSE,
+    'rss_usaid_commentary_importer' => FALSE,
+    'rss_usaid_issue_briefs_importer_' => FALSE,
     'node' => FALSE,
     'user' => FALSE,
     'feed' => FALSE,
     'opml' => FALSE,
+    'clone_agris_file' => TRUE,
   );
   $export['default_feeds_importer'] = $strongarm;
 
@@ -631,18 +828,18 @@ function landlibrary_strongarm() {
     'agris-xpathparser_18-explode' => FALSE,
     'agris-xpathparser_15-sprintf' => FALSE,
     'agris_filter-xpathparser_0-strip_tags' => TRUE,
-    'agris_filter-xpathparser_0-html_entity_decode' => FALSE,
+    'agris_filter-xpathparser_0-html_entity_decode' => TRUE,
     'agris_filter-xpathparser_0-find_replace_regex' => TRUE,
     'agris_filter-xpathparser_1-strip_tags' => TRUE,
-    'agris_filter-xpathparser_1-html_entity_decode' => FALSE,
+    'agris_filter-xpathparser_1-html_entity_decode' => TRUE,
     'agris_filter-xpathparser_1-find_replace_regex' => TRUE,
     'agris_filter-xpathparser_3-html_entity_decode' => FALSE,
     'agris_filter-xpathparser_2-find_replace_regex' => TRUE,
     'agris_filter-xpathparser_2-strip_tags' => TRUE,
-    'agris_filter-xpathparser_3-strip_tags' => TRUE,
+    'agris_filter-xpathparser_3-strip_tags' => FALSE,
     'agris_filter-xpathparser_4-find_replace_regex' => TRUE,
     'agris_filter-xpathparser_4-strip_tags' => TRUE,
-    'agris_filter-xpathparser_7-sprintf' => FALSE,
+    'agris_filter-xpathparser_7-sprintf' => TRUE,
     'agris_filter-xpathparser_9-strip_tags' => TRUE,
     'agris_filter-xpathparser_9-find_replace_regex' => TRUE,
     'agris_filter-xpathparser_9-explode' => FALSE,
@@ -665,15 +862,15 @@ function landlibrary_strongarm() {
     'clone2_agris_file-xpathparser_5-explode' => TRUE,
     'clone2_agris_file-xpathparser_1-reduce_to_single_element' => TRUE,
     'clone2_agris_file-xpathparser_5-reduce_to_single_element' => TRUE,
-    'clone2_agris_file-xpathparser_1-find_replace' => TRUE,
+    'clone2_agris_file-xpathparser_1-find_replace' => FALSE,
     'clone_agris_file-xpathparser_10-strip_tags' => FALSE,
     'clone_agris_file-xpathparser_10-string2id' => FALSE,
     'agris_organization_preimporter-xpathparser_0-strip_tags' => TRUE,
     'agris_organization_preimporter-xpathparser_0-html_entity_decode' => TRUE,
     'agris_organization_preimporter-xpathparser_0-find_replace' => TRUE,
-    'agris_organization_preimporter-xpathparser_1-strip_tags' => TRUE,
+    'agris_organization_preimporter-xpathparser_1-strip_tags' => FALSE,
     'agris_organization_preimporter-xpathparser_1-html_entity_decode' => FALSE,
-    'agris_organization_preimporter-xpathparser_0-copy' => FALSE,
+    'agris_organization_preimporter-xpathparser_0-copy' => TRUE,
     'agris_organization_preimporter-xpathparser_1-copy' => TRUE,
     'agris_organization_preimporter-xpathparser_1-required' => TRUE,
     'agris_organization_preimporter-xpathparser_1-rewrite' => TRUE,
@@ -683,7 +880,7 @@ function landlibrary_strongarm() {
     'agris_organization_preimporter-xpathparser_0-find_replaces' => TRUE,
     'agris_organization_preimporter-xpathparser_1-find_replace' => FALSE,
     'agris_organization_preimporter-xpathparser_1-find_replaces' => FALSE,
-    'agris_filter-xpathparser_0-find_replace' => FALSE,
+    'agris_filter-xpathparser_0-find_replace' => TRUE,
     'agris_filter-xpathparser_1-find_replace' => FALSE,
     'agris_filter-xpathparser_2-find_replace' => FALSE,
     'agris_filter-xpathparser_3-find_replace' => FALSE,
@@ -692,15 +889,15 @@ function landlibrary_strongarm() {
     'agris_filter-xpathparser_5-find_replaces' => FALSE,
     'agris_filter-xpathparser_6-find_replace' => FALSE,
     'agris_filter-xpathparser_6-find_replaces' => FALSE,
-    'agris_filter-xpathparser_7-find_replace' => FALSE,
-    'agris_filter-xpathparser_7-find_replaces' => FALSE,
+    'agris_filter-xpathparser_7-find_replace' => TRUE,
+    'agris_filter-xpathparser_7-find_replaces' => TRUE,
     'agris_filter-xpathparser_8-find_replace' => FALSE,
     'agris_filter-xpathparser_8-find_replaces' => FALSE,
     'agris_filter-xpathparser_9-find_replace' => FALSE,
     'agris_filter-xpathparser_9-find_replaces' => FALSE,
     'agris_filter-xpathparser_10-find_replace' => FALSE,
     'agris_filter-xpathparser_10-find_replaces' => FALSE,
-    'agris_filter-xpathparser_0-find_replaces' => FALSE,
+    'agris_filter-xpathparser_0-find_replaces' => TRUE,
     'agris_filter-xpathparser_1-find_replaces' => FALSE,
     'agris_filter-xpathparser_2-find_replaces' => FALSE,
     'agris_filter-xpathparser_3-find_replaces' => FALSE,
@@ -711,8 +908,8 @@ function landlibrary_strongarm() {
     'agris_filter-xpathparser_4-html_entity_decode' => TRUE,
     'agris_filter-xpathparser_5-html_entity_decode' => FALSE,
     'agris_filter-xpathparser_9-html_entity_decode' => FALSE,
-    'agris_filter-xpathparser_10-html_entity_decode' => FALSE,
-    'clone2_agris_file-xpathparser_0-find_replace' => FALSE,
+    'agris_filter-xpathparser_10-html_entity_decode' => TRUE,
+    'clone2_agris_file-xpathparser_0-find_replace' => TRUE,
     'clone2_agris_file-xpathparser_0-find_replaces' => FALSE,
     'clone2_agris_file-xpathparser_5-find_replace' => FALSE,
     'clone2_agris_file-xpathparser_1-find_replacea' => FALSE,
@@ -720,23 +917,23 @@ function landlibrary_strongarm() {
     'clone2_agris_file-xpathparser_1-find_replaces' => FALSE,
     'clone2_agris_file-xpathparser_5-html_entity_decode' => FALSE,
     'clone2_agris_file-xpathparser_1-html_entity_decode' => FALSE,
-    'agris_filter-xpathparser_11-find_replace' => FALSE,
-    'agris_filter-xpathparser_11-find_replaces' => FALSE,
+    'agris_filter-xpathparser_11-find_replace' => TRUE,
+    'agris_filter-xpathparser_11-find_replaces' => TRUE,
     'agris_filter-xpathparser_11-html_entity_decode' => TRUE,
     'agris_conference_preimporter-xpathparser_0-find_replace' => FALSE,
     'agris_conference_preimporter-xpathparser_0-find_replaces' => FALSE,
-    'agris_conference_preimporter-xpathparser_0-html_entity_decode' => TRUE,
-    'agris_filter-xpathparser_4-default_value' => TRUE,
+    'agris_conference_preimporter-xpathparser_0-html_entity_decode' => FALSE,
+    'agris_filter-xpathparser_4-default_value' => FALSE,
     'clone2_agris_file-xpathparser_0-implode' => FALSE,
     'clone2_agris_file-xpathparser_1-implode' => FALSE,
     'clone2_agris_file-xpathparser_5-implode' => FALSE,
     'clone2_agris_file-xpathparser_0-truncate_text' => FALSE,
     'clone2_agris_file-xpathparser_1-truncate_text' => FALSE,
     'agris_filter-xpathparser_11-implode' => TRUE,
-    'agris_filter-xpathparser_11-truncate_text' => FALSE,
+    'agris_filter-xpathparser_11-truncate_text' => TRUE,
     'clone2_agris_file-xpathparser_5-truncate_text' => FALSE,
     'agris_conference_preimporter-xpathparser_0-truncate_text' => FALSE,
-    'agris_filter-parent_taxonomy_languages-copy' => FALSE,
+    'agris_filter-parent_taxonomy_languages-copy' => TRUE,
     'agris_filter-xpathparser_12-default_value' => FALSE,
     'ifpri_ingestion-xpathparser_26-default_value' => FALSE,
     'ifpri_batch_file_importer-xpathparser_0-html_entity_decode' => FALSE,
@@ -745,23 +942,23 @@ function landlibrary_strongarm() {
     'ifpri_batch_file_importer-xpathparser_15-default_value' => FALSE,
     'ifpri_batch_file_importer-xpathparser_6-html_entity_decode' => FALSE,
     'ifpri_batch_file_importer-xpathparser_16-sprintf' => FALSE,
-    'ifpri_creator_preimporter-xpathparser_0-find_replace' => FALSE,
-    'ifpri_creator_preimporter-xpathparser_1-find_replace' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-find_replace' => TRUE,
+    'ifpri_creator_preimporter-xpathparser_1-find_replace' => TRUE,
     'agris_filter-xpathparser_14-find_replace' => FALSE,
     'agris_filter-xpathparser_14-find_replace1' => FALSE,
-    'agris_filter-xpathparser_15-find_replace' => FALSE,
-    'agris_filter-xpathparser_15-find_replace1' => FALSE,
+    'agris_filter-xpathparser_15-find_replace' => TRUE,
+    'agris_filter-xpathparser_15-find_replace1' => TRUE,
     'agris_filter-xpathparser_12-default_valuefao' => TRUE,
     'agris_filter-xpathparser_2-explode' => FALSE,
     'agris_filter-xpathparser_2-array_filter' => FALSE,
     'agris_filter-xpathparser_6-array_filter' => FALSE,
     'ifpri_creator_preimporter-xpathparser_0-explode' => FALSE,
-    'ifpri_creator_preimporter-xpathparser_1-explode' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_1-explode' => TRUE,
     'agris_filter-xpathparser_2-php_code' => TRUE,
     'agris_filter-xpathparser_2-find_replace1' => TRUE,
     'agris_filter-xpathparser_4-required' => FALSE,
     'agris_filter-xpathparser_3-required' => FALSE,
-    'ifpri_creator_preimporter-xpathparser_0-reduce_to_single_element' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-reduce_to_single_element' => TRUE,
     'ifpri_creator_preimporter-xpathparser_0-keyword_filter' => FALSE,
     'ifpri_batch_file_importer-xpathparser_6-keyword_filter' => TRUE,
     'ifpri_batch_file_importer-xpathparser_6-required' => FALSE,
@@ -772,8 +969,8 @@ function landlibrary_strongarm() {
     'ifpri_creator_preimporter2-xpathparser_0-keyword_filter' => TRUE,
     'ifpri_creator_preimporter2-xpathparser_0-find_replace' => FALSE,
     'ifpri_creator_preimporter2-xpathparser_2-find_replace' => FALSE,
-    'ifpri_batch_file_importer-xpathparser_13-keyword_filter' => FALSE,
-    'ifpri_batch_file_importer-xpathparser_14-keyword_filter' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_13-keyword_filter' => TRUE,
+    'ifpri_batch_file_importer-xpathparser_14-keyword_filter' => TRUE,
     'ifpri_batch_file_importer-xpathparser_19-required' => FALSE,
     'ifpri_creator_preimporter2-xpathparser_2-find_replace1' => FALSE,
     'ifpri_creator_preimporter2-xpathparser_2-find_replace3' => FALSE,
@@ -783,7 +980,7 @@ function landlibrary_strongarm() {
     'ifpri_batch_file_importer-xpathparser_12-explode' => FALSE,
     'ifpri_batch_file_importer-xpathparser_12-reduce_to_single_element' => FALSE,
     'ifpri_batch_file_importer-xpathparser_20-explode' => FALSE,
-    'ifpri_batch_file_importer-xpathparser_20-reduce_to_single_element' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_20-reduce_to_single_element' => TRUE,
     'ifpri_batch_file_importer-xpathparser_4-find_replace' => FALSE,
     'ifpri_batch_file_importer-xpathparser_4-explode' => FALSE,
     'ifpri_batch_file_importer-xpathparser_4-reduce_to_single_element' => FALSE,
@@ -808,6 +1005,254 @@ function landlibrary_strongarm() {
     'ingest_from_oai_data_source-language-required' => FALSE,
     'ingest_from_oai_data_source-description-required' => FALSE,
     'ingest_from_oai_data_source-title-required' => FALSE,
+    'agris_filter-xpathparser_17-required' => FALSE,
+    'agris_filter-xpathparser_16-required' => TRUE,
+    'rss_usaid_issue_briefs_importer_-description-required' => FALSE,
+    'rss_usaid_issue_briefs_importer_-description-strip_tags' => FALSE,
+    'rss_usaid_issue_briefs_importer_-description-html_entity_decode' => FALSE,
+    'rss_usaid_issue_briefs_importer_-blank_source_3-default_value' => FALSE,
+    'rss_usaid_issue_briefs_importer_-blank_source_1-default_value' => FALSE,
+    'rss_usaid_issue_briefs_importer_-blank_source_2-default_value' => FALSE,
+    'rss_usaid_issue_briefs_importer_-guid-explode' => FALSE,
+    'rss_usaid_issue_briefs_importer_-guid-reduce_to_single_element' => FALSE,
+    'rss_usaid_commentary_importer-description-strip_tags' => FALSE,
+    'rss_usaid_commentary_importer-description-html_entity_decode' => FALSE,
+    'rss_usaid_commentary_importer-title-required' => FALSE,
+    'rss_usaid_commentary_importer-title-strip_tags' => FALSE,
+    'rss_usaid_commentary_importer-guid-explode' => FALSE,
+    'rss_usaid_commentary_importer-guid-reduce_to_single_element' => FALSE,
+    'rss_usaid_commentary_importer-blank_source_1-default_value' => FALSE,
+    'rss_usaid_commentary_importer-blank_source_3-default_value' => FALSE,
+    'rss_usaid_commentary_importer-description-required' => FALSE,
+    'rss_usaid_commentary_importer-url-required' => FALSE,
+    'rss_usaid_commentary_importer-blank_source_2-default_value' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-find_replace1' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-find_replace3' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_1-reduce_to_single_element' => TRUE,
+    'agris_conference_preimporter-xpathparser_0-find_replace2' => FALSE,
+    'agris_conference_preimporter-xpathparser_1-string2id' => FALSE,
+    'clone2_agris_file-xpathparser_0-find_replacew' => TRUE,
+    'clone2_agris_file-xpathparser_1-find_replaceq' => FALSE,
+    'clone2_agris_file-xpathparser_0-explode' => TRUE,
+    'clone2_agris_file-xpathparser_0-reduce_to_single_element' => TRUE,
+    'clone2_agris_file-xpathparser_5-find_replacef' => FALSE,
+    'agris_organization_preimporter-xpathparser_1-explode' => TRUE,
+    'agris_organization_preimporter-xpathparser_1-reduce_to_single_element' => TRUE,
+    'agris_organization_preimporter-xpathparser_1-find_replacew' => FALSE,
+    'agris_organization_preimporter-xpathparser_2-string2id' => FALSE,
+    'agris_filter-xpathparser_13-default_value' => TRUE,
+    'agris_filter-xpathparser_18-strip_tags' => TRUE,
+    'agris_filter-xpathparser_18-find_replace' => FALSE,
+    'agris_filter-xpathparser_18-find_replacef' => FALSE,
+    'agris_filter-xpathparser_18-reduce_to_single_element' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_6-strip_tags' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_20-strip_tags' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_7-default_value' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_21-default_value' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_1-required' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_0-required' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_8-hash' => TRUE,
+    'ifpri_batch_file_importer-xpathparser_19-explode' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_22-explode' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_8-explode' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_8-reduce_to_single_element' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_2-find_replace' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_3-find_replace' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_11-find_replace' => TRUE,
+    'ifpri_batch_file_importer-xpathparser_23-explode' => FALSE,
+    'agris_filter-xpathparser_16-default_value' => FALSE,
+    'agris_filter-xpathparser_19-truncate_text' => FALSE,
+    'agris_filter-xpathparser_19-find_replace' => FALSE,
+    'agris_filter-xpathparser_19-find_replaceg' => FALSE,
+    'agris_filter-xpathparser_19-html_entity_decode' => FALSE,
+    'clone2_agris_file-xpathparser_1-agris_creators' => FALSE,
+    'agris_filter-xpathparser_20-find_replace' => FALSE,
+    'agris_filter-xpathparser_20-find_replacer' => FALSE,
+    'agris_filter-xpathparser_20-html_entity_decode' => FALSE,
+    'agris_filter-xpathparser_21-copy' => FALSE,
+    'agris_filter-xpathparser_20-truncate_text' => FALSE,
+    'agris_filter-xpathparser_22-find_replace' => FALSE,
+    'agris_filter-xpathparser_22-find_replacef' => FALSE,
+    'agris_filter-xpathparser_23-find_replace' => FALSE,
+    'agris_filter-xpathparser_23-find_replacev' => FALSE,
+    'agris_filter-xpathparser_23-find_replacevv' => FALSE,
+    'agris_filter-xpathparser_23-find_replacefff' => FALSE,
+    'agris_filter-xpathparser_25-find_replace' => FALSE,
+    'agris_filter-xpathparser_25-find_replacegg' => FALSE,
+    'agris_filter-xpathparser_27-find_replace' => FALSE,
+    'agris_filter-xpathparser_27-find_replacegg0' => FALSE,
+    'agris_filter-xpathparser_26-find_replace' => FALSE,
+    'agris_filter-xpathparser_26-find_replace3' => FALSE,
+    'agris_filter-xpathparser_28-find_replace' => FALSE,
+    'agris_filter-xpathparser_28-find_replaceg12' => FALSE,
+    'agris_filter-xpathparser_27-sprintf' => FALSE,
+    'agris_filter-xpathparser_22-check_if_contains' => FALSE,
+    'clone2_agris_file-xpathparser_1-find_replace_regex' => FALSE,
+    'clone2_agris_file-xpathparser_5-find_replace_regex' => FALSE,
+    'agris_filter-xpathparser_9-find_replace_regexw' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_0-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_0-find_replacee' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_1-copy' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_2-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_2-find_replacef' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_0-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_2-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_3-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_3-find_replacef' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_3-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_2-strip_tags' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_3-required' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_4-default_value' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_5-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_5-find_replaceff' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_5-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_6-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_6-find_replaceff4' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_7-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_7-find_replacef1' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_7-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_8-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_8-2find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_8-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_9-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_9-find_replacet' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_9-html_entity_decode' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_10-default_value' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_11-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_11-find_replace7' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_12-default_value' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_13-required' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_15-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_15-find_replace3' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_15-truncate_text' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_16-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_16-find_replacer' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_17-find_replace' => FALSE,
+    'agris_dump_file_upload_importer-xpathparser_17-find_replacer' => FALSE,
+    'clone2_agris_file-xpathparser_1-reduce_to_single_element_bynum' => TRUE,
+    'clone2_agris_file-xpathparser_5-reduce_to_single_element_bynum' => TRUE,
+    'rss_usaid_commentary_importer-blank_source_4-default_value' => FALSE,
+    'rss_usaid_issue_briefs_importer_-blank_source_4-default_value' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-create_mul_nodes' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_14-array_order' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_13-array_order' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_13-reduce_to_single_element_bynum' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_14-reduce_to_single_element_bynum' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-reduce_to_single_element_bynum' => TRUE,
+    'ifpri_creator_preimporter-xpathparser_1-copy' => TRUE,
+    'ifpri_batch_file_importer-xpathparser_13-required' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_5-keyword_filter' => TRUE,
+    'clone2_agris_file-xpathparser_1-trim' => FALSE,
+    'clone2_agris_file-xpathparser_5-trim' => FALSE,
+    'clone2_agris_file-xpathparser_1-find_replacecomma' => FALSE,
+    'clone2_agris_file-xpathparser_5-find_replace12' => FALSE,
+    'clone2_agris_file-xpathparser_1-html_entity_encode' => TRUE,
+    'clone2_agris_file-xpathparser_5-html_entity_encode' => TRUE,
+    'clone2_agris_file-xpathparser_1-create_mul_nodes' => TRUE,
+    'ifpri_batch_file_importer-xpathparser_13-explode' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_14-explode' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_8-array_order' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_20-trim_array' => TRUE,
+    'ifpri_batch_file_importer-xpathparser_20-trim' => FALSE,
+    'landcoalition_rss_import-guid-explode' => FALSE,
+    'landcoalition_rss_import-guid-reduce_to_single_element' => FALSE,
+    'landcoalition_rss_import-description-html_entity_decode' => FALSE,
+    'landcoalition_rss_import-description-strip_tags' => FALSE,
+    'landcoalition_rss_import-title-strip_tags' => FALSE,
+    'landcoalition_rss_import-blank_source_1-default_value' => FALSE,
+    'landcoalition_events_rss_import-description-strip_tags' => FALSE,
+    'landcoalition_events_rss_import-description-html_entity_decode' => FALSE,
+    'agris_organization_preimporter-xpathparser_1-find_replace1' => FALSE,
+    'clone2_agris_file-xpathparser_1-find_replace4' => FALSE,
+    'clone2_agris_file-xpathparser_5-find_replaceq' => FALSE,
+    'agris_conference_preimporter-xpathparser_0-find_replacef' => FALSE,
+    'agris_filter-xpathparser_18-find_replace2' => FALSE,
+    'agris_filter-xpathparser_19-find_replacer' => FALSE,
+    'agris_filter-xpathparser_20-find_replacere' => FALSE,
+    'agris_filter-xpathparser_22-find_replaceree' => FALSE,
+    'agris_filter-xpathparser_25-find_replaceff' => FALSE,
+    'agris_filter-xpathparser_27-find_replacefffff' => FALSE,
+    'agris_filter-xpathparser_28-find_replace12' => FALSE,
+    'agris_filter-xpathparser_1-find_replace_regexr' => FALSE,
+    'agris_filter-xpathparser_10-strip_tags' => FALSE,
+    'agris_filter-xpathparser_10-html_entity_encode' => TRUE,
+    'agris_filter-xpathparser_10-trim' => FALSE,
+    'agris_filter-xpathparser_10-find_replace_regex' => FALSE,
+    'agris_filter-xpathparser_6-trim' => FALSE,
+    'agris_filter-xpathparser_2-trim' => FALSE,
+    'agris_conference_preimporter-xpathparser_0-trim' => FALSE,
+    'agris_filter-xpathparser_19-trim' => FALSE,
+    'agris_filter-xpathparser_1-trim' => FALSE,
+    'agris_filter-xpathparser_8-trim' => FALSE,
+    'agris_filter-xpathparser_3-trim' => FALSE,
+    'agris_filter-xpathparser_5-trim' => FALSE,
+    'agris_filter-xpathparser_9-trim' => FALSE,
+    'agris_filter-xpathparser_14-trim' => FALSE,
+    'agris_filter-xpathparser_28-trim' => FALSE,
+    'agris_filter-xpathparser_27-trim' => FALSE,
+    'agris_filter-xpathparser_22-trim' => FALSE,
+    'agris_filter-xpathparser_12-trim' => FALSE,
+    'agris_filter-xpathparser_18-trim' => FALSE,
+    'agris_filter-xpathparser_25-trim' => FALSE,
+    'agris_filter-xpathparser_20-trim' => FALSE,
+    'agris_filter-xpathparser_9-find_replace_regexr' => FALSE,
+    'agris_filter-xpathparser_17-trim' => FALSE,
+    'ifpri_creator_preimporter-xpathparser_0-find_replace2' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_13-reduce_to_single_element' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_13-reduce_to_single_element12' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_8-reduce_to_single_element_bynum' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_8-required' => FALSE,
+    'ifpri_batch_file_importer-xpathparser_4-reduce_to_single_element_bynum' => FALSE,
+    'rss_usaid_commentary_importer-guid-required' => FALSE,
+    'landcoalition_rss_import-blank_source_2-default_value' => FALSE,
+    'landcoalition_rss_import-blank_source_3-default_value' => FALSE,
+    'landcoalition_rss_import-blank_source_4-default_value' => FALSE,
+    'fao_authors_preimporter_-xpathparser_0-find_replace' => FALSE,
+    'fao_authors_preimporter_-xpathparser_0-find_replacee' => FALSE,
+    'fao_authors_preimporter_-xpathparser_0-find_replace12' => FALSE,
+    'fao_authors_preimporter_-xpathparser_0-explode' => FALSE,
+    'fao_authors_preimporter_-xpathparser_0-trim' => FALSE,
+    'fao_authors_preimporter_-xpathparser_0-create_mul_nodes' => FALSE,
+    'fao_importer-xpathparser_0-strip_tags' => FALSE,
+    'fao_importer-xpathparser_0-find_replace_regex' => FALSE,
+    'fao_importer-xpathparser_0-reduce_to_single_element' => FALSE,
+    'fao_importer-xpathparser_0-trim' => FALSE,
+    'fao_importer-xpathparser_1-strip_tags' => FALSE,
+    'fao_importer-xpathparser_1-trim' => FALSE,
+    'fao_importer-xpathparser_1-html_entity_decode' => FALSE,
+    'fao_importer-xpathparser_1-required' => FALSE,
+    'fao_importer-xpathparser_2-timetodate' => FALSE,
+    'fao_importer-xpathparser_3-find_replace' => FALSE,
+    'fao_importer-xpathparser_6-trim' => FALSE,
+    'fao_importer-xpathparser_9-default_value' => FALSE,
+    'fao_importer-xpathparser_10-find_replace' => FALSE,
+    'fao_importer-xpathparser_10-find_replace11' => FALSE,
+    'fao_importer-xpathparser_10-find_replacefff' => FALSE,
+    'fao_importer-xpathparser_10-explode' => FALSE,
+    'fao_importer-xpathparser_10-trim' => FALSE,
+    'fao_importer-xpathparser_12-rewrite' => FALSE,
+    'fao_importer-xpathparser_12-trim' => FALSE,
+    'fao_importer-xpathparser_14-default_value' => FALSE,
+    'fao_pub_importer-xpathparser_0-strip_tags' => FALSE,
+    'fao_pub_importer-xpathparser_0-find_replace_regex' => FALSE,
+    'fao_pub_importer-xpathparser_0-truncate_text' => FALSE,
+    'fao_pub_importer-xpathparser_0-reduce_to_single_element' => FALSE,
+    'fao_pub_importer-xpathparser_0-trim' => FALSE,
+    'fao_pub_importer-xpathparser_1-strip_tags' => FALSE,
+    'fao_pub_importer-xpathparser_1-trim' => FALSE,
+    'fao_pub_importer-xpathparser_1-required' => FALSE,
+    'fao_pub_importer-xpathparser_2-timetodate' => FALSE,
+    'fao_pub_importer-xpathparser_3-find_replace' => FALSE,
+    'fao_pub_importer-xpathparser_6-trim' => FALSE,
+    'fao_pub_importer-xpathparser_9-default_value' => FALSE,
+    'fao_pub_importer-xpathparser_10-find_replace' => FALSE,
+    'fao_pub_importer-xpathparser_10-find_replaceff' => FALSE,
+    'fao_pub_importer-xpathparser_10-find_replaced' => FALSE,
+    'fao_pub_importer-xpathparser_10-explode' => FALSE,
+    'fao_pub_importer-xpathparser_10-trim' => FALSE,
+    'fao_pub_importer-xpathparser_14-default_value' => FALSE,
+    'fao_importer-xpathparser_19-default_value' => FALSE,
+    'fao_pub_importer-xpathparser_19-default_value' => FALSE,
   );
   $export['default_feeds_tamper'] = $strongarm;
 
@@ -816,13 +1261,14 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'default_field_group';
   $strongarm->value = array(
-    'group_ds_keywords|node|landlibrary_resource|default' => TRUE,
-    'group_doc_title|node|landlibrary_resource|form' => TRUE,
-    'group_doc_alt_title|node|landlibrary_resource|form' => TRUE,
-    'group_doc_description|node|landlibrary_resource|form' => TRUE,
-    'group_doc_copyrights|node|landlibrary_resource|form' => TRUE,
-    'group_doc_keywords|node|landlibrary_resource|form' => TRUE,
-    'group_doc_citatio|node|landlibrary_resource|form' => TRUE,
+    'group_about|node|debate|form' => FALSE,
+    'group_status|node|debate|form' => FALSE,
+    'group_st|node|debate|form' => TRUE,
+    'group_st_extra|node|debate|form' => TRUE,
+    'group_opt|node|news|form' => FALSE,
+    'group_about|node|event|form' => FALSE,
+    'group_details|node|event|form' => FALSE,
+    'group_about|node|organization|form' => FALSE,
   );
   $export['default_field_group'] = $strongarm;
 
@@ -837,7 +1283,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'drupal_private_key';
-  $strongarm->value = 'n-s_ui7n5ntPqRzskormtM7cytsxgvLTvHdAjLALVcs';
+  $strongarm->value = 'B5NWEfxu6-WzZzsK1ZuVTBuDQIX_88XYvZmJhV_7QVI';
   $export['drupal_private_key'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -851,7 +1297,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'elysia_cron_last_run';
-  $strongarm->value = 1426157451;
+  $strongarm->value = 1431097510;
   $export['elysia_cron_last_run'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -882,6 +1328,10 @@ function landlibrary_strongarm() {
       0 => 'i18n_translation_set',
       1 => 'tsid',
     ),
+    'mailchimp_signup' => array(
+      0 => 'mailchimp_signup',
+      1 => 'mcs_id',
+    ),
     'search_api_server' => array(
       0 => 'search_api_server',
       1 => 'id',
@@ -902,9 +1352,9 @@ function landlibrary_strongarm() {
       0 => 'users',
       1 => 'uid',
     ),
-    'ds_views' => array(
-      0 => 'views_view',
-      1 => 'vid',
+    'rules_config' => array(
+      0 => 'rules_config',
+      1 => 'id',
     ),
   );
   $export['entityreference:base-tables'] = $strongarm;
@@ -913,7 +1363,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'error_level';
-  $strongarm->value = '1';
+  $strongarm->value = '2';
   $export['error_level'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -933,10 +1383,13 @@ function landlibrary_strongarm() {
     'devel' => 'devel',
     'features' => 'features',
     'landbook-menu' => 'landbook-menu',
-    'user-menu' => 'user-menu',
     'main-menu' => 'main-menu',
     'management' => 'management',
     'navigation' => 'navigation',
+    'user-menu' => 'user-menu',
+    'menu-landlibrary-menu' => 0,
+    'user-signin' => 0,
+    'menu-lpf' => 0,
   );
   $export['features_admin_menu_links_menus'] = $strongarm;
 
@@ -1190,6 +1643,70 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
+    'user_account_fields' => array(
+      'field_base' => 'aeef332a07e302d53b82feeaaf25b08c',
+      'field_instance' => '8997e5b1ef43bc886584227f13ad3b1f',
+      'user_permission' => 'bac84756a15b2927dcef4b772f7c2dcb',
+      'dependencies' => '633ebff4945d991b94da5059471dcae9',
+    ),
+    'landbook_nodes' => array(
+      'field_base' => 'f87776afbe34dede520cf9342108b11d',
+      'field_instance' => '42555825838da63283e728d781d59908',
+      'dependencies' => 'a4bf35d75654189496dc596be392ba13',
+      'node' => 'e2240ca4056dfe45ec66178dc8e7c950',
+    ),
+    'landbook_nodes_importers' => array(
+      'dependencies' => '981314fbdcdc839f8ba1d10a17259887',
+      'feeds_importer' => '37252ef09ebed4b286922c5cd073edf4',
+    ),
+    'landdebate_content_types' => array(
+      'field_base' => 'fea4b308eb3a55ee20b653fb1a4dc13b',
+      'field_instance' => 'e5087b7fce112472d15d9e773d501aa7',
+      'taxonomy' => '57ad8fed4d3550b4d771ffc638851f02',
+      'dependencies' => 'b6250ef114aafe7b3143c3a8d257a996',
+      'node' => 'c1ca29a971d8af1d2092e9927f3ee6ed',
+      'filter' => '550e4218430d1ffcaf251eeb7bd4af1d',
+      'language' => 'fef9f0f346ed3a4d4f92637ff471fce6',
+      'wysiwyg' => '6e53eac8f64faa743de05413f1677bcc',
+    ),
+    'landdebate_permissions' => array(
+      'user_permission' => 'a03842db7f23218690f53372b557b534',
+      'dependencies' => 'b98c9a1bb5480cc4be50727984e25ff4',
+      'user_role' => '6fa1afa9e5038f014fdac74cf9797d91',
+    ),
+    'landdebate_views' => array(
+      'dependencies' => '70c6d525b5b67ca2e227e6583e01382d',
+      'views_view' => '4c992d51ab5ec70ae07d890369133b51',
+    ),
+    'landportal_user' => array(
+      'field_instance' => 'ff6e582909d021cf73eded32cf21cd79',
+      'user_role' => 'd3c546cc7f1d068869341db7c2f35a64',
+      'dependencies' => '210f32221d07f2b962c81917b6ac87de',
+      'field_base' => '32eb0b5d6bf7e85a38811866319e2e82',
+      'taxonomy' => '79d0c2c312c578a150f3c7ebaf3dc484',
+    ),
+    'facebook_login' => array(
+      'user_permission' => 'bf7c518962500d20ff6a1d2d28308b98',
+      'dependencies' => 'e0dacc060541b28fca98266f9ea6680e',
+      'oauthconnector_provider' => '3d3c56e5a08f18a41f1fbae6aa1cca89',
+    ),
+    'twitter_login' => array(
+      'user_permission' => 'afd5bdec5fccedd7e9d000bbd1104f00',
+      'dependencies' => 'e0dacc060541b28fca98266f9ea6680e',
+      'oauthconnector_provider' => 'e55689229159bf9ab1d8e028335bef4d',
+    ),
+    'landportal_users' => array(
+      'field_base' => 'f6f3d5d8ff6a57b77c8533b656f2f8c7',
+      'field_instance' => '8e5ad249d8f02245672aaf24822f44a7',
+      'user_role' => '5d628b9a8b772364dc69e72aa0fbe9ab',
+      'user_permission' => '519d3879847a7804b60cdee033e6b508',
+      'dependencies' => '641ccb727ea7c8da2124319757a66bc1',
+      'apachesolr_environment' => 'bc42bc0d6fdf676c207bbce558f761da',
+      'apachesolr_search_page' => '12f9888d5ca42450dc7bda703569d5d4',
+    ),
+    'landportal_homepage' => array(
+      'dependencies' => 'f334ac27b969221f20f7aa53080cd124',
+    ),
     'landportal_taxonomy' => array(
       'taxonomy' => '7f76feafd3ff816e141559cbc83909e0',
       'dependencies' => '7e7450a2963ca08a323b91c00d7aa58f',
@@ -1202,16 +1719,8 @@ function landlibrary_strongarm() {
       'variable' => 'abcebb341b0df9f989ccf8cc3b131d75',
       'field_instance' => '9feb3458de7dacb8a92272e14031d088',
       'dependencies' => '8c979ee11d74992d2e41e55d2762e964',
-      'field_group' => '89ea551f04010454fdf9d3c1c85b9507',
       'node' => '2a7b6cadec295465bd93f8c7bbe52f39',
-    ),
-    'landdebate' => array(
-      'dependencies' => '993fbbca9aeb07855ce94120f757b338',
-      'context' => '67c3ed946a859b1bef18124f3e7d0e5d',
-      'views_view' => '10ae75abed6308f5bea2de16b6447d6e',
-    ),
-    'landportal_homepage' => array(
-      'dependencies' => 'f334ac27b969221f20f7aa53080cd124',
+      'field_group' => '89ea551f04010454fdf9d3c1c85b9507',
     ),
     'landportal_extra' => array(
       'variable' => 'b7051383538658724b9233b3d54ab7bb',
@@ -1224,36 +1733,40 @@ function landlibrary_strongarm() {
       'image' => 'fd605d450803018d7936924e4dbe72a7',
       'views_view' => '9c15f155cb18fc48671aea3dff9bab35',
     ),
-    'feeds_import' => array(
-      'dependencies' => '981314fbdcdc839f8ba1d10a17259887',
-      'feeds_importer' => '73516e8d6759de9cf6b90b5e53a98dc9',
+    'landdebate' => array(
+      'dependencies' => '993fbbca9aeb07855ce94120f757b338',
+      'context' => '67c3ed946a859b1bef18124f3e7d0e5d',
+      'views_view' => '10ae75abed6308f5bea2de16b6447d6e',
     ),
     'feeds_news' => array(
-      'dependencies' => '7cb125eca131a8d6fac432adc5e3f02c',
-      'field' => FALSE,
+      'node' => 'd7002d258836b4e70734c81ba9b2dbc4',
       'field_base' => 'ac6943fc8528e131b847112f3a34933c',
       'field_instance' => '0339b0264d933c65164354426bdbc387',
+      'dependencies' => '7cb125eca131a8d6fac432adc5e3f02c',
       'feeds_importer' => '10d07c68c22c77b2cdc1e0651c97c8f3',
-      'node' => 'd7002d258836b4e70734c81ba9b2dbc4',
       'views_view' => '0266b838be351653895c7c90adcff818',
     ),
     'landlibrary' => array(
-      'dependencies' => '3c59bcbc3cd756951a6d15b0f48a25c8',
-      'field_base' => '4cc3050a2cb3015790b08b5a890b53fb',
-      'field_instance' => 'ee8e5fa0fb75d56c970c754d2b5ad814',
-      'menu_custom' => 'f8790bbef3074a8db2dbcb4335c9d54d',
-      'taxonomy' => '72465b6adfc43935aad306cafc4b21f2',
-      'variable' => '44da652f9b271ea4f4150ba8ff3734cb',
-      'ds_layout_settings' => '2d23acf915d5c549ac3a9462dd06601c',
-      'ds_view_modes' => '247dcbb6347a26c94c6e921f0d97abf1',
+      'node' => '6495cba2ed3a3b2948cd5254bc50c337',
+      'variable' => '8491e68e76f389c895a09fbc1f6fba58',
+      'field_base' => '8c406f2b635a1a932abc23e3e81c8b32',
+      'field_instance' => '37f20b26ec71416148ba5d787f759c8b',
+      'language' => '49dd66f2128657e4384f0118ccc306e9',
+      'menu_custom' => '9b73a9442ad775793f93bb136a44c045',
+      'taxonomy' => '0596bc3227668f5456a5a6fe66543083',
+      'dependencies' => '51c6273879dd832dc49d59385cb270a5',
+      'apachesolr_environment' => '1687608d206742f422c4c9e3f825f597',
+      'context' => '1f126eb145d23751b0e251ec31f6620a',
+      'ds_layout_settings' => 'ce2425251df281862ecf63d8cd18fcca',
       'elysia_cron' => '4a9fdea1a30a4d5403005af325d1e530',
-      'facetapi' => '743f21f24e058a8340c3a6d7695de367',
-      'feeds_importer' => '9f2e1e01268c5e168b8dc0bef61e04ff',
-      'feeds_tamper' => '63364cd87a50af61a13a10cb8f637b03',
-      'field_group' => '1c47a39b3b9a66a8b448b5f22de70f76',
-      'node' => '975303c9f8b84102c32afc80ec6c2ec0',
-      'views_view' => '04202fe966a2be18519fe3e710507e44',
-      'menu_links' => FALSE,
+      'feeds_importer' => '7ad816c453a1c341fdd98793d5800c9c',
+      'feeds_tamper' => 'eb691a02ffd8a1e24b991755c0d2646f',
+      'field_group' => '5f528fdbec552604e8e76f7acffd1449',
+      'views_view' => 'e0c1acb899affdb35a40af580ffb5f22',
+    ),
+    'feeds_import' => array(
+      'dependencies' => '981314fbdcdc839f8ba1d10a17259887',
+      'feeds_importer' => '73516e8d6759de9cf6b90b5e53a98dc9',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -1521,7 +2034,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'features_rebuild_on_flush';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['features_rebuild_on_flush'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1577,12 +2090,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'feeds_reschedule';
-  $strongarm->value = array(
-    'ifpri_creator_preimporter2' => 'ifpri_creator_preimporter2',
-    'legacy_importer' => 'legacy_importer',
-    'legacy_ll_crawler' => 'legacy_ll_crawler',
-    'ingest_from_oai_data_source' => 'ingest_from_oai_data_source',
-  );
+  $strongarm->value = FALSE;
   $export['feeds_reschedule'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1715,13 +2223,13 @@ function landlibrary_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'locations' => array(
-          'weight' => '17',
+          'weight' => '15',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
         'language' => array(
           'weight' => '5',
@@ -1731,6 +2239,53 @@ function landlibrary_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__landlibrary_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__page';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(
+        'language' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_node__page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1808,7 +2363,17 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_taxonomy_term__languages';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'search_index' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'path' => array(
@@ -1821,7 +2386,14 @@ function landlibrary_strongarm() {
           'weight' => '0',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'description' => array(
+          'default' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_taxonomy_term__languages'] = $strongarm;
@@ -2176,7 +2748,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'install_time';
-  $strongarm->value = 1424859289;
+  $strongarm->value = 1401876982;
   $export['install_time'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2187,75 +2759,94 @@ function landlibrary_strongarm() {
     0 => 'misc/drupal.js',
     1 => 'sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js',
     2 => 'misc/jquery.once.js',
-    3 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js',
-    4 => 'sites/all/modules/jquery_update/replace/misc/1.9/jquery.ba-bbq.min.js',
-    5 => 'sites/all/modules/jquery_update/replace/misc/1.9/overlay-parent.js',
-    6 => 'sites/all/modules/views_charts/views_charts.js',
-    7 => 'sites/all/modules/devel/devel_krumo_path.js',
-    8 => 'sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js',
-    9 => 'sites/all/modules/jquery_update/replace/misc/jquery.form.min.js',
-    10 => 'sites/all/modules/views/js/base.js',
-    11 => 'misc/progress.js',
-    12 => 'sites/all/modules/jquery_update/js/jquery_update.js',
-    13 => 'misc/ajax.js',
-    14 => 'sites/all/modules/views/js/ajax_view.js',
-    15 => 'modules/contextual/contextual.js',
-    16 => 'sites/all/modules/views/js/views-contextual.js',
-    17 => 'modules/toolbar/toolbar.js',
-    'refresh:fr' => 'waiting',
+    3 => 'modules/system/system.js',
+    4 => 'misc/form.js',
+    5 => 'sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js',
+    6 => 'modules/toolbar/toolbar.js',
     'refresh:de' => 'waiting',
-    'refresh:es' => 'waiting',
-    18 => 'modules/overlay/overlay-child.js',
-    19 => 'misc/textarea.js',
-    20 => 'sites/all/modules/ctools/js/dependent.js',
-    21 => 'sites/all/modules/ctools/js/dropbutton.js',
-    22 => 'misc/tableheader.js',
-    23 => 'misc/form.js',
-    24 => 'misc/collapse.js',
-    25 => 'misc/batch.js',
-    26 => 'sites/all/modules/ctools/js/auto-submit.js',
-    27 => 'sites/all/modules/context/context_ui/context_ui.js',
-    28 => 'sites/all/modules/context/context_ui/jquery.pageEditor.js',
-    29 => 'sites/all/modules/context/plugins/context_reaction_block.js',
-    30 => 'misc/tabledrag.js',
-    31 => 'sites/all/modules/facetapi/facetapi.js',
-    32 => 'misc/autocomplete.js',
-    33 => 'sites/all/modules/views_bulk_operations/js/views_bulk_operations.js',
-    34 => 'modules/file/file.js',
-    35 => 'misc/states.js',
-    36 => 'sites/all/modules/date/date.js',
-    37 => 'sites/all/modules/entityconnect/theme/js/entityconnect.js',
-    38 => 'modules/menu/menu.js',
-    39 => 'sites/all/modules/pathauto/pathauto.js',
-    40 => 'modules/node/node.js',
-    41 => 'modules/comment/comment-node-form.js',
-    42 => 'misc/vertical-tabs.js',
-    43 => 'sites/all/modules/conditional_fields/js/conditional_fields.js',
-    44 => 'sites/all/modules/field_group/field_group.js',
-    45 => 'misc/machine-name.js',
+    7 => 'misc/collapse.js',
+    8 => 'sites/all/modules/jquery_update/replace/misc/jquery.form.min.js',
+    9 => 'misc/progress.js',
+    10 => 'sites/all/modules/jquery_update/js/jquery_update.js',
+    11 => 'misc/ajax.js',
+    12 => 'sites/all/modules/media/js/media.core.js',
+    13 => 'sites/all/modules/media/js/util/json2.js',
+    14 => 'sites/all/modules/media/js/util/ba-debug.min.js',
+    15 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js',
+    16 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js',
+    17 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js',
+    18 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js',
+    19 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js',
+    20 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js',
+    21 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js',
+    22 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js',
+    23 => 'sites/all/modules/media/js/media.popups.js',
+    24 => 'sites/all/modules/ckeditor/plugins/media/library.js',
+    25 => 'sites/all/modules/ckeditor/includes/ckeditor.utils.js',
+    26 => 'misc/textarea.js',
+    27 => 'modules/field/modules/text/text.js',
+    28 => 'modules/filter/filter.js',
+    29 => 'misc/states.js',
+    30 => 'modules/menu/menu.js',
+    31 => 'modules/node/node.js',
+    32 => 'sites/all/modules/pathauto/pathauto.js',
+    33 => 'modules/comment/comment-node-form.js',
+    34 => 'misc/autocomplete.js',
+    35 => 'misc/vertical-tabs.js',
+    36 => 'sites/all/modules/google_analytics/googleanalytics.js',
+    37 => 'modules/contextual/contextual.js',
+    38 => 'misc/batch.js',
+    39 => 'misc/tableheader.js',
+    40 => 'sites/all/modules/views/js/base.js',
+    41 => 'sites/all/modules/views/js/ajax_view.js',
+    42 => 'sites/all/modules/views_bulk_operations/js/views_bulk_operations.js',
+    43 => 'misc/machine-name.js',
+    44 => 'sites/all/modules/jira_issue_collector/jira_issue_collector.js',
+    45 => 'sites/all/modules/field_group/field_group.js',
     46 => 'modules/field_ui/field_ui.js',
     47 => 'sites/all/modules/field_group/field_group.field_ui.js',
-    48 => 'sites/all/modules/location/location_autocomplete.js',
-    49 => 'sites/all/modules/token/jquery.treeTable.js',
-    50 => 'sites/all/modules/token/token.js',
-    51 => 'sites/all/modules/auto_nodetitle/auto_nodetitle.js',
-    52 => 'modules/menu/menu.admin.js',
-    53 => 'modules/node/content_types.js',
-    54 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js',
-    55 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js',
-    56 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js',
-    57 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js',
-    58 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js',
-    59 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js',
-    60 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js',
-    61 => 'sites/all/modules/ctools/js/modal.js',
-    62 => 'sites/all/modules/ds/js/ds.admin.js',
-    63 => 'sites/all/modules/ds/modules/ds_extras/js/ds_extras.admin.js',
-    64 => 'sites/all/modules/features/features.js',
-    65 => 'sites/all/modules/views/js/ajax.js',
-    66 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.tabs.min.js',
-    67 => 'sites/all/modules/ctools/js/collapsible-div.js',
-    68 => 'sites/all/modules/views/js/views-admin.js',
+    48 => 'misc/tabledrag.js',
+    49 => 'sites/all/modules/hybridauth/js/hybridauth.modal.js',
+    50 => 'sites/all/modules/hybridauth/js/hybridauth.onclick.js',
+    51 => 'sites/all/modules/ctools/js/dropbutton.js',
+    52 => 'sites/all/modules/ctools/js/auto-submit.js',
+    53 => 'sites/all/modules/jquery_update/replace/misc/1.9/jquery.ba-bbq.min.js',
+    54 => 'sites/all/modules/views/js/views-list.js',
+    55 => 'sites/all/modules/views/js/ajax.js',
+    56 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.tabs.min.js',
+    57 => 'sites/all/modules/ctools/js/dependent.js',
+    58 => 'sites/all/modules/ctools/js/collapsible-div.js',
+    59 => 'sites/all/modules/views/js/views-admin.js',
+    60 => 'sites/beta.landportal.info/modules/landbook/js/util.js',
+    61 => 'sites/beta.landportal.info/modules/landbook/js/country_chart_options.js',
+    62 => 'sites/beta.landportal.info/modules/landbook/js/libraries/canvg.js',
+    63 => 'sites/beta.landportal.info/modules/landbook/js/libraries/rgbcolor.js',
+    64 => 'sites/beta.landportal.info/modules/landbook/js/libraries/StackBlur.js',
+    65 => 'sites/beta.landportal.info/modules/landbook/js/libraries/seedrandom.min.js',
+    66 => 'sites/beta.landportal.info/modules/landbook/js/libraries/wesCountry.min.js',
+    67 => 'sites/beta.landportal.info/modules/landbook/js/controller/datasource.js',
+    68 => 'sites/all/modules/features/features.js',
+    69 => 'modules/block/block.js',
+    70 => 'sites/beta.landportal.info/modules/landbook/js/controller/country.js',
+    71 => 'sites/all/modules/token/token.js',
+    72 => 'sites/all/modules/date/date_api/date_year_range.js',
+    73 => 'sites/all/modules/date/date_admin.js',
+    74 => 'sites/all/modules/ctools/js/modal.js',
+    75 => 'sites/all/modules/ds/js/ds.admin.js',
+    76 => 'sites/all/modules/ds/modules/ds_extras/js/ds_extras.admin.js',
+    77 => 'sites/beta.landportal.info/modules/landbook/js/controller/regions.js',
+    78 => 'sites/all/modules/facetapi/facetapi.js',
+    79 => 'sites/all/modules/search_api/search_api.admin.js',
+    80 => 'sites/all/modules/rdfx/rdfui/rdfui.js',
+    'refresh:es' => 'waiting',
+    81 => 'misc/jquery.cookie.js',
+    82 => 'sites/all/modules/module_filter/js/module_filter.js',
+    83 => 'sites/all/modules/module_filter/js/modules.js',
+    84 => 'sites/all/modules/module_filter/js/module_filter_tab.js',
+    85 => 'sites/all/modules/module_filter/js/dynamic_position.js',
+    86 => 'modules/file/file.js',
+    87 => 'sites/all/modules/date/date.js',
+    88 => 'sites/all/modules/entityconnect/theme/js/entityconnect.js',
   );
   $export['javascript_parsed'] = $strongarm;
 
@@ -2332,6 +2923,27 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_fao_docs_feed';
+  $strongarm->value = '0';
+  $export['language_content_type_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_fao_preimport_authors';
+  $strongarm->value = '0';
+  $export['language_content_type_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_fao_publications_feed';
+  $strongarm->value = '0';
+  $export['language_content_type_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_general_feed';
   $strongarm->value = '0';
   $export['language_content_type_general_feed'] = $strongarm;
@@ -2367,6 +2979,13 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_page';
+  $strongarm->value = '2';
+  $export['language_content_type_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_person';
   $strongarm->value = '0';
   $export['language_content_type_person'] = $strongarm;
@@ -2397,6 +3016,20 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'language_negotiation_language';
   $strongarm->value = array(
+    'locale-url' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_url',
+        'switcher' => 'locale_language_switcher_url',
+        'url_rewrite' => 'locale_language_url_rewrite_url',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+    'locale-user' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_user',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
     'language-default' => array(
       'callbacks' => array(
         'language' => 'language_from_default',
@@ -2415,6 +3048,18 @@ function landlibrary_strongarm() {
         'language' => 'locale_language_from_url',
         'switcher' => 'locale_language_switcher_url',
         'url_rewrite' => 'locale_language_url_rewrite_url',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+    'locale-user' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_user',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+    'locale-interface' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_interface',
       ),
       'file' => 'includes/locale.inc',
     ),
@@ -2533,7 +3178,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'location_defaultnum_organization';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['location_defaultnum_organization'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2631,7 +3276,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'location_maxnum_organization';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['location_maxnum_organization'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3482,8 +4127,8 @@ function landlibrary_strongarm() {
   $strongarm->value = array(
     'multiple' => array(
       'min' => '0',
-      'max' => '1',
-      'add' => '1',
+      'max' => '0',
+      'add' => '0',
     ),
     'form' => array(
       'weight' => '0',
@@ -3807,7 +4452,9 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_expanded';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'menu-land-portal-about',
+  );
   $export['menu_expanded'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3815,58 +4462,62 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_masks';
   $strongarm->value = array(
-    0 => 503,
-    1 => 501,
-    2 => 494,
-    3 => 493,
-    4 => 253,
-    5 => 251,
-    6 => 250,
-    7 => 247,
-    8 => 246,
-    9 => 245,
-    10 => 241,
-    11 => 238,
-    12 => 127,
-    13 => 126,
-    14 => 125,
-    15 => 124,
-    16 => 123,
-    17 => 122,
-    18 => 121,
-    19 => 119,
-    20 => 118,
-    21 => 117,
-    22 => 63,
-    23 => 62,
-    24 => 61,
-    25 => 60,
-    26 => 59,
-    27 => 58,
-    28 => 56,
-    29 => 44,
-    30 => 31,
-    31 => 30,
-    32 => 29,
-    33 => 28,
-    34 => 27,
-    35 => 26,
-    36 => 24,
-    37 => 22,
-    38 => 21,
-    39 => 15,
-    40 => 14,
-    41 => 13,
-    42 => 12,
-    43 => 11,
-    44 => 10,
-    45 => 7,
-    46 => 6,
-    47 => 5,
-    48 => 4,
-    49 => 3,
-    50 => 2,
-    51 => 1,
+    0 => 507,
+    1 => 506,
+    2 => 503,
+    3 => 501,
+    4 => 494,
+    5 => 493,
+    6 => 253,
+    7 => 252,
+    8 => 251,
+    9 => 250,
+    10 => 247,
+    11 => 246,
+    12 => 245,
+    13 => 241,
+    14 => 238,
+    15 => 127,
+    16 => 126,
+    17 => 125,
+    18 => 124,
+    19 => 123,
+    20 => 122,
+    21 => 121,
+    22 => 119,
+    23 => 118,
+    24 => 117,
+    25 => 108,
+    26 => 63,
+    27 => 62,
+    28 => 61,
+    29 => 60,
+    30 => 59,
+    31 => 58,
+    32 => 56,
+    33 => 54,
+    34 => 44,
+    35 => 31,
+    36 => 30,
+    37 => 29,
+    38 => 28,
+    39 => 27,
+    40 => 26,
+    41 => 24,
+    42 => 22,
+    43 => 21,
+    44 => 15,
+    45 => 14,
+    46 => 13,
+    47 => 12,
+    48 => 11,
+    49 => 10,
+    50 => 7,
+    51 => 6,
+    52 => 5,
+    53 => 3,
+    54 => 2,
+    55 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -3918,6 +4569,33 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_fao_docs_feed';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_fao_preimport_authors';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_fao_publications_feed';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_general_feed';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -3959,6 +4637,15 @@ function landlibrary_strongarm() {
     0 => 'main-menu',
   );
   $export['menu_options_landlibrary_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_page';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -4025,6 +4712,27 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_fao_docs_feed';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_fao_preimport_authors';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_fao_publications_feed';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_general_feed';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_general_feed'] = $strongarm;
@@ -4060,6 +4768,13 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_page';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_person';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_person'] = $strongarm;
@@ -4083,7 +4798,13 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
   $strongarm->value = array(
-    'facetapi_bonus' => 1426153143,
+    'rules_i18n' => 1431076972,
+    'rules' => 1431076972,
+    'rules_autotag' => 1431076972,
+    'rules_admin' => 1431076972,
+    'bulk_export' => 1431090019,
+    'apachesolr_descr' => 1431090019,
+    'uuid_redirect' => 1431090019,
   );
   $export['module_filter_recent_modules'] = $strongarm;
 
@@ -4098,7 +4819,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1426073088';
+  $strongarm->value = '1424961807';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4152,6 +4873,36 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_fao_docs_feed';
+  $strongarm->value = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+  $export['node_options_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_fao_preimport_authors';
+  $strongarm->value = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+  $export['node_options_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_fao_publications_feed';
+  $strongarm->value = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+  $export['node_options_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_general_feed';
   $strongarm->value = array(
     0 => 'status',
@@ -4200,6 +4951,7 @@ function landlibrary_strongarm() {
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_page'] = $strongarm;
 
@@ -4268,6 +5020,27 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_fao_docs_feed';
+  $strongarm->value = '1';
+  $export['node_preview_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_fao_preimport_authors';
+  $strongarm->value = '1';
+  $export['node_preview_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_fao_publications_feed';
+  $strongarm->value = '1';
+  $export['node_preview_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_general_feed';
   $strongarm->value = '1';
   $export['node_preview_general_feed'] = $strongarm;
@@ -4299,6 +5072,13 @@ function landlibrary_strongarm() {
   $strongarm->name = 'node_preview_landlibrary_resource';
   $strongarm->value = '1';
   $export['node_preview_landlibrary_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_page';
+  $strongarm->value = '1';
+  $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -4352,6 +5132,27 @@ function landlibrary_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_fao_docs_feed';
+  $strongarm->value = 1;
+  $export['node_submitted_fao_docs_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_fao_preimport_authors';
+  $strongarm->value = 1;
+  $export['node_submitted_fao_preimport_authors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_fao_publications_feed';
+  $strongarm->value = 1;
+  $export['node_submitted_fao_publications_feed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_general_feed';
   $strongarm->value = 1;
   $export['node_submitted_general_feed'] = $strongarm;
@@ -4388,7 +5189,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_page';
-  $strongarm->value = FALSE;
+  $strongarm->value = 1;
   $export['node_submitted_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4549,7 +5350,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_landlibrary_resource_pattern';
-  $strongarm->value = '';
+  $strongarm->value = 'library/[current-date:custom:Y]/[current-date:custom:m]/[node:title]';
   $export['pathauto_node_landlibrary_resource_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4605,7 +5406,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = 'content/[node:title]';
+  $strongarm->value = '[node:content-type]/[current-date:custom:Y]/[current-date:custom:m]/[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4619,7 +5420,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_punctuation_hyphen';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['pathauto_punctuation_hyphen'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4835,11 +5636,8 @@ function landlibrary_strongarm() {
   $strongarm->name = 'search_active_modules';
   $strongarm->value = array(
     'apachesolr_search' => 'apachesolr_search',
-    'node' => 'node',
-    'user' => 'user',
-    'advanced_help' => 0,
-    'ds_search' => 0,
-    'term_search' => 0,
+    'node' => 0,
+    'user' => 0,
   );
   $export['search_active_modules'] = $strongarm;
 
@@ -4847,7 +5645,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1426153510;
+  $strongarm->value = 1431068952;
   $export['search_api_solr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4861,14 +5659,14 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'katsivelis.panagis@agroknow.gr';
+  $strongarm->value = 'info@landportal.info';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = '83.212.124.64';
+  $strongarm->value = 'Landportal';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4896,7 +5694,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_delete_terms';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['taxonomy_csv_delete_terms'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4953,7 +5751,7 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_export_vocabulary_id';
   $strongarm->value = array(
-    10 => '10',
+    3 => '3',
   );
   $export['taxonomy_csv_export_vocabulary_id'] = $strongarm;
 
@@ -5003,7 +5801,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_import_enclosure';
-  $strongarm->value = 'none';
+  $strongarm->value = 'quotation';
   $export['taxonomy_csv_import_enclosure'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5024,7 +5822,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_import_fields_format';
-  $strongarm->value = 'name, field_machine_name_iso_639_1, field_machine_name_iso_639_2';
+  $strongarm->value = 'name';
   $export['taxonomy_csv_import_fields_format'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5101,7 +5899,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_set_hierarchy';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
   $export['taxonomy_csv_set_hierarchy'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5115,7 +5913,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_structure_type';
-  $strongarm->value = 'flat';
+  $strongarm->value = 'tree';
   $export['taxonomy_csv_structure_type'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5143,7 +5941,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_csv_vocabulary_id';
-  $strongarm->value = '15';
+  $strongarm->value = '21';
   $export['taxonomy_csv_vocabulary_id'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5164,7 +5962,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1426157469;
+  $strongarm->value = 1431097548;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5178,7 +5976,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
-  $strongarm->value = '3';
+  $strongarm->value = '30037204';
   $export['user_admin_role'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5199,7 +5997,7 @@ function landlibrary_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_register';
-  $strongarm->value = 2;
+  $strongarm->value = '2';
   $export['user_register'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5210,7 +6008,9 @@ function landlibrary_strongarm() {
     'locale' => array(
       0 => 'language_content_type_article',
       1 => 'language_content_type_page',
-      2 => 'language_default',
+      2 => 'language_content_type_landbook_country',
+      3 => 'language_content_type_landbook_indicator',
+      4 => 'language_default',
     ),
     'i18n' => array(
       0 => 'i18n_language_list',
@@ -5221,8 +6021,36 @@ function landlibrary_strongarm() {
       2 => 'i18n_string_source_language',
       3 => 'i18n_string_debug',
     ),
-    'hybridauth' => array(
-      0 => 'hybridauth_widget_title',
+    'googleanalytics' => array(
+      0 => 'googleanalytics_account',
+    ),
+    'i18n_node' => array(
+      0 => 'i18n_hide_translation_links',
+      1 => 'i18n_node_default_language_none',
+      2 => 'i18n_node_options_migrate_example_beer',
+      3 => 'i18n_node_options_blog_post',
+      4 => 'i18n_node_options_debate',
+      5 => 'i18n_node_options_event',
+      6 => 'i18n_node_options_group',
+      7 => 'i18n_node_options_landbook_country',
+      8 => 'i18n_node_options_landbook_indicator',
+      9 => 'i18n_node_options_news',
+      10 => 'i18n_node_options_organization',
+      11 => 'i18n_node_options_page',
+      12 => 'i18n_node_options_migrate_example_wine',
+      13 => 'i18n_node_options_migrate_example_producer',
+      14 => 'i18n_node_extended_migrate_example_beer',
+      15 => 'i18n_node_extended_blog_post',
+      16 => 'i18n_node_extended_debate',
+      17 => 'i18n_node_extended_event',
+      18 => 'i18n_node_extended_group',
+      19 => 'i18n_node_extended_landbook_country',
+      20 => 'i18n_node_extended_landbook_indicator',
+      21 => 'i18n_node_extended_news',
+      22 => 'i18n_node_extended_organization',
+      23 => 'i18n_node_extended_page',
+      24 => 'i18n_node_extended_migrate_example_wine',
+      25 => 'i18n_node_extended_migrate_example_producer',
     ),
   );
   $export['variable_module_list'] = $strongarm;
@@ -5232,11 +6060,12 @@ function landlibrary_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'views_defaults';
   $strongarm->value = array(
+    'admin_views_taxonomy_term' => FALSE,
+    'frontpage' => TRUE,
     'latest_news' => TRUE,
     'latest_debates' => TRUE,
     'debate_facilitators' => TRUE,
-    'community' => TRUE,
-    'test_solr_search' => TRUE,
+    'community' => FALSE,
   );
   $export['views_defaults'] = $strongarm;
 

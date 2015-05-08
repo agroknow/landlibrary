@@ -14,7 +14,7 @@ function landlibrary_default_elysia_cron_rules() {
   $cron_rule->disabled = FALSE; /* Edit this to true to make a default cron_rule disabled initially */
   $cron_rule->api_version = 1;
   $cron_rule->name = ':default';
-  $cron_rule->disable = FALSE;
+  $cron_rule->disable = NULL;
   $cron_rule->rule = NULL;
   $cron_rule->weight = NULL;
   $cron_rule->context = NULL;
@@ -64,7 +64,7 @@ function landlibrary_default_elysia_cron_rules() {
   $cron_rule->disabled = FALSE; /* Edit this to true to make a default cron_rule disabled initially */
   $cron_rule->api_version = 1;
   $cron_rule->name = 'feeds_cron';
-  $cron_rule->disable = TRUE;
+  $cron_rule->disable = NULL;
   $cron_rule->rule = NULL;
   $cron_rule->weight = NULL;
   $cron_rule->context = NULL;

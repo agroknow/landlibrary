@@ -42,7 +42,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 3;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[';
   $export['agris_filter-xpathparser_0-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -79,7 +79,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 4;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]>';
   $export['agris_filter-xpathparser_0-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -124,8 +124,8 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 3;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->weight = 6;
+  $feeds_tamper->description = 'Find replace <![CDATA[';
   $export['agris_filter-xpathparser_1-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -141,7 +141,7 @@ function landlibrary_feeds_tamper_default() {
     'limit' => '',
     'real_limit' => -1,
   );
-  $feeds_tamper->weight = 2;
+  $feeds_tamper->weight = 10;
   $feeds_tamper->description = 'Find replace REGEX';
   $export['agris_filter-xpathparser_1-find_replace_regex'] = $feeds_tamper;
 
@@ -161,8 +161,8 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 4;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->weight = 7;
+  $feeds_tamper->description = 'Find replace ]]>';
   $export['agris_filter-xpathparser_1-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -173,7 +173,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->source = 'xpathparser:1';
   $feeds_tamper->plugin_id = 'html_entity_decode';
   $feeds_tamper->settings = array();
-  $feeds_tamper->weight = 1;
+  $feeds_tamper->weight = 9;
   $feeds_tamper->description = 'HTML entity decode';
   $export['agris_filter-xpathparser_1-html_entity_decode'] = $feeds_tamper;
 
@@ -187,7 +187,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->settings = array(
     'allowed_tags' => '',
   );
-  $feeds_tamper->weight = 0;
+  $feeds_tamper->weight = 8;
   $feeds_tamper->description = 'Strip tags';
   $export['agris_filter-xpathparser_1-strip_tags'] = $feeds_tamper;
 
@@ -207,8 +207,8 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->weight = 7;
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_10-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -227,8 +227,8 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 1;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->weight = 8;
+  $feeds_tamper->description = 'Find replace <![CDATA[ with space';
   $export['agris_filter-xpathparser_10-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -239,7 +239,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->source = 'xpathparser:10';
   $feeds_tamper->plugin_id = 'html_entity_decode';
   $feeds_tamper->settings = array();
-  $feeds_tamper->weight = 2;
+  $feeds_tamper->weight = 11;
   $feeds_tamper->description = 'HTML entity decode';
   $export['agris_filter-xpathparser_10-html_entity_decode'] = $feeds_tamper;
 
@@ -336,7 +336,7 @@ function landlibrary_feeds_tamper_default() {
     'default_value' => 'AGRIS',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Set default value';
+  $feeds_tamper->description = 'Set default value AGRIS';
   $export['agris_filter-xpathparser_12-default_value'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -348,7 +348,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->plugin_id = 'find_replace';
   $feeds_tamper->settings = array(
     'find' => '<![CDATA[',
-    'replace' => '<![CDATA[',
+    'replace' => '',
     'case_sensitive' => 0,
     'word_boundaries' => 0,
     'whole' => 0,
@@ -356,7 +356,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[ with space';
   $export['agris_filter-xpathparser_14-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -376,7 +376,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 1;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_14-find_replace1'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -436,7 +436,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 8;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[';
   $export['agris_filter-xpathparser_2-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -473,7 +473,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 9;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]>';
   $export['agris_filter-xpathparser_2-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -519,7 +519,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 2;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[ with space';
   $export['agris_filter-xpathparser_3-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -539,7 +539,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 3;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_3-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -550,7 +550,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->source = 'xpathparser:3';
   $feeds_tamper->plugin_id = 'html_entity_decode';
   $feeds_tamper->settings = array();
-  $feeds_tamper->weight = 0;
+  $feeds_tamper->weight = 4;
   $feeds_tamper->description = 'HTML entity decode';
   $export['agris_filter-xpathparser_3-html_entity_decode'] = $feeds_tamper;
 
@@ -564,7 +564,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->settings = array(
     'allowed_tags' => '',
   );
-  $feeds_tamper->weight = 1;
+  $feeds_tamper->weight = 5;
   $feeds_tamper->description = 'Strip tags';
   $export['agris_filter-xpathparser_3-strip_tags'] = $feeds_tamper;
 
@@ -579,7 +579,7 @@ function landlibrary_feeds_tamper_default() {
     'default_value' => 'English',
   );
   $feeds_tamper->weight = 5;
-  $feeds_tamper->description = 'Set default value';
+  $feeds_tamper->description = 'Set default value English';
   $export['agris_filter-xpathparser_4-default_value'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -682,7 +682,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[ with space';
   $export['agris_filter-xpathparser_5-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -702,7 +702,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 1;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_5-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -734,7 +734,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_6-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -754,7 +754,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 1;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[ with space';
   $export['agris_filter-xpathparser_6-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -840,7 +840,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_8-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -860,7 +860,7 @@ function landlibrary_feeds_tamper_default() {
     'func' => 'str_ireplace',
   );
   $feeds_tamper->weight = 1;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->description = 'Find replace <![CDATA[';
   $export['agris_filter-xpathparser_8-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -887,8 +887,8 @@ function landlibrary_feeds_tamper_default() {
     'limit' => '',
     'real_separator' => ';',
   );
-  $feeds_tamper->weight = 2;
-  $feeds_tamper->description = 'Explode';
+  $feeds_tamper->weight = 8;
+  $feeds_tamper->description = 'Explode ;';
   $export['agris_filter-xpathparser_9-explode'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -907,8 +907,8 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 3;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->weight = 9;
+  $feeds_tamper->description = 'Find replace <![CDATA[';
   $export['agris_filter-xpathparser_9-find_replace'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -924,7 +924,7 @@ function landlibrary_feeds_tamper_default() {
     'limit' => '',
     'real_limit' => -1,
   );
-  $feeds_tamper->weight = 1;
+  $feeds_tamper->weight = 14;
   $feeds_tamper->description = 'Find replace REGEX';
   $export['agris_filter-xpathparser_9-find_replace_regex'] = $feeds_tamper;
 
@@ -944,8 +944,8 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 4;
-  $feeds_tamper->description = 'Find replace';
+  $feeds_tamper->weight = 10;
+  $feeds_tamper->description = 'Find replace ]]> with space';
   $export['agris_filter-xpathparser_9-find_replaces'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -956,7 +956,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->source = 'xpathparser:9';
   $feeds_tamper->plugin_id = 'html_entity_decode';
   $feeds_tamper->settings = array();
-  $feeds_tamper->weight = 5;
+  $feeds_tamper->weight = 11;
   $feeds_tamper->description = 'HTML entity decode';
   $export['agris_filter-xpathparser_9-html_entity_decode'] = $feeds_tamper;
 
@@ -970,7 +970,7 @@ function landlibrary_feeds_tamper_default() {
   $feeds_tamper->settings = array(
     'allowed_tags' => '',
   );
-  $feeds_tamper->weight = 0;
+  $feeds_tamper->weight = 13;
   $feeds_tamper->description = 'Strip tags';
   $export['agris_filter-xpathparser_9-strip_tags'] = $feeds_tamper;
 
@@ -985,7 +985,7 @@ function landlibrary_feeds_tamper_default() {
     'default_value' => 'International Food Policy Research Institute (IFPRI)',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Set default value';
+  $feeds_tamper->description = 'International Food Policy Research Institute (IFPRI)';
   $export['ifpri_batch_file_importer-xpathparser_15-default_value'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -1001,7 +1001,7 @@ function landlibrary_feeds_tamper_default() {
     'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Explode';
+  $feeds_tamper->description = 'Explode ; ';
   $export['ifpri_batch_file_importer-xpathparser_5-explode'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
@@ -1032,7 +1032,7 @@ function landlibrary_feeds_tamper_default() {
     'regex' => FALSE,
     'func' => 'str_ireplace',
   );
-  $feeds_tamper->weight = 0;
+  $feeds_tamper->weight = 7;
   $feeds_tamper->description = 'Find replace';
   $export['ifpri_creator_preimporter-xpathparser_0-find_replace'] = $feeds_tamper;
 

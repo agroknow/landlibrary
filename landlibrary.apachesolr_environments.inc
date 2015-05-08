@@ -14,7 +14,7 @@ function landlibrary_apachesolr_environments() {
   $environment->api_version = 1;
   $environment->env_id = 'index_landportal_v2';
   $environment->name = 'index landportal v2';
-  $environment->url = 'http://83.212.124.64:8080/solr/landportal';
+  $environment->url = 'http://dev.landportal.info:8983/solr/landlibrary';
   $environment->service_class = '';
   $environment->conf = array(
     'apachesolr_direct_commit' => 0,
@@ -131,7 +131,9 @@ function landlibrary_apachesolr_environments() {
   );
   $environment->index_bundles = array(
     'node' => array(
-      0 => 'landlibrary_resource',
+      0 => 'fao_preimport_authors',
+      1 => 'fao_publications_feed',
+      2 => 'landlibrary_resource',
     ),
   );
   $export['index_landportal_v2'] = $environment;
